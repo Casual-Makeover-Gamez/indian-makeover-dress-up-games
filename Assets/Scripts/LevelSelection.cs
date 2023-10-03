@@ -8,14 +8,18 @@ using DG.Tweening;
 public class LevelSelection : MonoBehaviour
 {
     public GameObject Scroller, LoadingPanel, videoNotAvalible;
-    public Image fillBar;
+    public GameObject Iconpanel,selectionPanel,VsPanel;
+    public Image fillBar,PlayericonImage,opponentIconImage;
+    public Text IdTextvspanel;
     public Sprite[] Sprites;
+    public Sprite[] IconsSprites;
     public GameObject[] characters;
     public Button leftBtn,rightBtn;
-
     private List<ItemInfo> lighterList = new List<ItemInfo>();
+    private List<ItemInfo> playerIconList = new List<ItemInfo>();
     private ItemInfo tempItem;
     int selectedIndex;
+    string SelectesScene;
 
     public enum RewardType
     {
@@ -39,9 +43,17 @@ public class LevelSelection : MonoBehaviour
     //}
     private void Start()
     {
-        Rai_SaveLoad.LoadProgress();
+        if (GameManager.Instance.Initialized == false)
+        {
+            GameManager.Instance.Initialized = true;
+            Rai_SaveLoad.LoadProgress();
+        }
         InitialIzeScroller();
         GetItemsInfo();
+        if (Iconpanel)
+        {
+            Iconpanel.SetActive(true);
+        }
 
     }
     public void InitialIzeScroller()
@@ -58,6 +70,15 @@ public class LevelSelection : MonoBehaviour
         SetupItemData(SaveData.Instance.SelectionProps.LevelLock, lighterList);
         SetItemIcon(lighterList, Sprites);
         #endregion      
+        if (Iconpanel)
+        {
+            var PlayersInfo = Iconpanel.GetComponentsInChildren<ItemInfo>();
+            for (int i = 0; i < PlayersInfo.Length; i++)
+            {
+                playerIconList.Add(PlayersInfo[i]);
+            }
+            SetItemIcon(playerIconList, IconsSprites);
+        }
     }
 
     #region SetItemIcon
@@ -143,7 +164,7 @@ public class LevelSelection : MonoBehaviour
                     if (itemSprites[selectedIndex])
                     {
                         SaveData.Instance.Selectedvape = selectedIndex;
-                        StartCoroutine(loadScene("GamePlay", 0.5f));
+                        //StartCoroutine(loadScene("GamePlay", 0.5f));
                         Rai_SaveLoad.SaveProgress();
                     }
                 }
@@ -197,7 +218,6 @@ public class LevelSelection : MonoBehaviour
 
     #endregion
 
-
     #region SetItemsInfo
     private void SetItemsInfo(List<ItemInfo> _ItemInfo)
     {
@@ -227,7 +247,7 @@ public class LevelSelection : MonoBehaviour
     }
     #endregion
 
-    IEnumerator loadScene(string str, float delay)
+    IEnumerator loadScene(string str)
     {
         LoadingPanel.SetActive(true);
         fillBar.fillAmount = 0;
@@ -260,6 +280,40 @@ public class LevelSelection : MonoBehaviour
             modeSelected--;
         }
         if (modeSelected == 0) leftBtn.interactable = false;
+    }
+
+    public void Play(string str)
+    {
+        SelectesScene = str;
+        selectionPanel.SetActive(false);
+        VsPanel.SetActive(true);
+        StartCoroutine(FindOponent());
+    }
+    public void PlayerIconsSelection(int index)
+    {
+        SaveData.Instance.PlayerSelectedAvatar = index;
+        PlayericonImage.sprite = IconsSprites[index];
+        Rai_SaveLoad.SaveProgress();
+    }
+    IEnumerator FindOponent()
+    {
+        yield return new WaitForSeconds(1f);
+
+        for (int i = 0; i < Random.Range(10, 25); i++)
+        {
+            opponentIconImage.gameObject.SetActive(false);
+            opponentIconImage.gameObject.SetActive(true);
+            opponentIconImage.sprite = IconsSprites[Random.Range(0, IconsSprites.Length)];
+            IdTextvspanel.gameObject.SetActive(false);
+            IdTextvspanel.gameObject.SetActive(true);
+            IdTextvspanel.text = Random.Range(100000, 999999).ToString();
+            yield return new WaitForSeconds(0.1f);
+        }
+        yield return new WaitForSeconds(1f);
+        //LetsStartBtn.SetActive(true);
+        //botImageInAnim.sprite = botImagevspanel.sprite;
+        //BotIdTextAnim.text = IdTextvspanel.text;
+        loadScene(SelectesScene);
     }
 
 }

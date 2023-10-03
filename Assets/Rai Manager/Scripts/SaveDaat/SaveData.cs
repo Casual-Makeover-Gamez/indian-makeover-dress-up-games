@@ -54,7 +54,8 @@ public class SaveData
     public bool RemoveAds = false;
     public int LevelsUnlocked = 1;
     public int EventsUnlocked = 0;
-    public int SelectedAvatar = 0;
+    public int PlayerSelectedAvatar = 0;
+    public int opponentSelectedAvatar = 0;
     public int Selectedvape;
     public string ProfileName;
     public bool ProfileCreated = false;
