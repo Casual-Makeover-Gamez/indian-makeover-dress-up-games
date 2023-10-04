@@ -46,9 +46,8 @@ public class PartyLook : MonoBehaviour
     public GameObject GamePanel, JudgementPanel;
     [Header("UI")]
     public GameObject sheIsReady;
-    public GameObject needMoreCoins, videoNotAvalible, videoPanel, coinPanel,LevelComplete;
+    public GameObject needMoreCoins, videoNotAvalible, videoPanel, coinPanel,WinnerPanel ,LevelComplete;
     public Image BotIcon,playerIcon;
-    //public GameObject scorePanel;
     [Header("Loading")]
     public GameObject LoadingPanel;
     public Image fillBar;
@@ -56,6 +55,7 @@ public class PartyLook : MonoBehaviour
     public MRS_Manager CharactorMover;
     public MRS_Manager OpponentMover;
     public CoinsAdder coinsAdder;
+    public CoinsAdder FinalcoinsAdder;
     [Header("Text")]
     public Text TotalCoins;
     public Text totalScore;
@@ -104,7 +104,7 @@ public class PartyLook : MonoBehaviour
     private List<ItemInfo> BlushList = new List<ItemInfo>();
     private List<ItemInfo> GlassesList = new List<ItemInfo>();
     private List<ItemInfo> backgroundList = new List<ItemInfo>();
-
+    int Wincoin;
     private ItemInfo tempItem;
     private int selectedIndex;
     [HideInInspector]
@@ -123,15 +123,12 @@ public class PartyLook : MonoBehaviour
     private int[] BlushScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
     private int[] EyeShadesScore = { 4000, 4050, 4100, 4150, 4200, 4250, 4300, 4350, 4400, 4420, 4440, 4460, 4480, 4490, 4495 };
     private int[] LipstickScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
-    //private int[] mehndiScore = { 4000, 4050, 4100, 4150, 4200, 4250, 4300, 4350, 4400, 4420, 4440, 4460, 4480, 4490, 4495 };
     private int[] NeckLaceScore = { 7000, 7100, 7200, 7300, 7400, 7500, 7600, 7700, 7750, 7800, 7850, 7900, 7940, 7980, 8000 };
     private int[] EyeBrowScore = { 4500, 4550, 4600, 4650, 4700, 4750, 4800, 4850, 4900, 4920, 4940, 4960, 4980, 5000, 5050 };
     private int[] ShoesScore = { 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 6800, 7000, 7200, 7400, 7600 };
-    //private int[] jhumkaScore = { 5150, 5200, 5250, 5300, 5350, 5400, 5450, 5600, 5650, 5700, 5750, 5800, 5850, 5900, 8950 };
-    private int[] BGScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
-    //private int[] malaScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
     private int[] GlassesScore = { 4500, 4550, 4600, 4650, 4700, 4750, 4800, 4850, 4900, 4920, 4940, 4960, 4980, 5000, 5050 };
     private int[] BouquetScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
+    private int[] BGScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
 
     // private int selectedIndex;
     private enum RewardType
@@ -154,12 +151,12 @@ public class PartyLook : MonoBehaviour
         selectedItem = PartyLookSelectedItem.Dress;
         uIElements.dressScroller.SetActive(true);
         TotalCoins.text = SaveData.Instance.Coins.ToString();
-        //comparePanel.SetActive(true);
-        //StartCoroutine(EnableOrDisable(0f, GamePanel, true));
         SetInitialValues();
         GetItemsInfo();
         StartCoroutine(AdDelay(45));
-        //StartCoroutine(FindOponent());
+        playerIcon.sprite = botSprites[SaveData.Instance.PlayerSelectedAvatar];
+        BotIcon.sprite = SaveData.Instance.opponentSelectedAvatar;
+        CharactorMover.Move(new Vector3(0, -150, 200), 0.5f, true, false);
     }
 
     IEnumerator ShowInterStitial()
@@ -859,7 +856,6 @@ public class PartyLook : MonoBehaviour
                             itemImage.gameObject.SetActive(false);
                             itemImage.gameObject.SetActive(true);
                             itemImage.sprite = itemSprites[selectedIndex];
-                           // ItemStatus((int)selectedItem);
                         }
                     }
                 }
@@ -869,13 +865,6 @@ public class PartyLook : MonoBehaviour
     }
     #endregion
 
-    //#region ItemStatus
-    //public void ItemStatus(int itemIndex)
-    //{
-    //    CatagoryImage[itemIndex].transform.GetChild(1).GetComponent<Image>().sprite = greenSprite;
-    //    CatagoryImage[itemIndex].transform.GetChild(1).GetChild(0).gameObject.SetActive(true);
-    //}
-    //#endregion
     IEnumerator SoureParticalPlay(List<ItemInfo> itemInfo)
     {
         yield return new WaitForSeconds(0.5f);
@@ -883,43 +872,25 @@ public class PartyLook : MonoBehaviour
         partical.transform.parent = totalScore.transform;
         partical.SetActive(true);
         yield return new WaitForSeconds(1);
-        //totalScore.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
-        //totalScore.transform.GetChild(0).GetComponent<AudioSource>().Play();
+        totalScore.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+        totalScore.transform.GetChild(0).GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.5f);
         totalScore.text = (dressValue + hairValue + bangleValue + HairBandValue + earringValue + BlushValue + eyeshadesValue + lipstickValue + necklaceValue +
                             EyeBrowValue + shoeValue + bgValue + GlassesValue + BouquetValue ).ToString();
     }
     #region Btnfunctions
-    //public void MakeUp(int index)
-    //{
-    //    DisableScrollers();
-    //    CharactorMover.Move(new Vector3(0, -150, 200), 0.5f, true, false);
-    //    GetItemsInfo();
-    //}
-
     public void Play(string str)
     {
         StartCoroutine(ShowInterStitial());
         StartCoroutine(LoadingScene(str));
     } 
-    //public void LetsGo()
-    //{
-    //    StartCoroutine(EnableOrDisable(0.1f, comparePanel, false));
-    //    StartCoroutine(EnableAnim(0f, VsAnim));
-    //    StartCoroutine(EnableOrDisable(1.5f, GamePanel, true));
-
-    //}
 
     public void Submit()
     {
         StartCoroutine(ShowInterStitial());
         topBar.SetActive(false);
-        //uIElements.BgImage.sprite = SubmitBGSprites;
-        //CoinSlot.SetActive(false);
-        //VideoSlot.SetActive(false);
         uIElements.aLLScrollers.SetActive(false);
         sheIsReady.SetActive(false);
-        //oppElements.BotInJudge.sprite = oppElements.botImagevspanel.sprite;
         JudgementPanel.SetActive(true);
         OpponentMover.gameObject.SetActive(true);
         CharactorMover.Move(new Vector3(-250, -150, 0), 0.5f, true, false);
@@ -933,24 +904,16 @@ public class PartyLook : MonoBehaviour
     }
     #endregion
 
-    #region EnableOrDisable
-    IEnumerator EnableOrDisable(float _Delay, GameObject activateObject, bool isTrue)
-    {
-        yield return new WaitForSecondsRealtime(_Delay);
-        activateObject.SetActive(isTrue);
-    }
-    IEnumerator EnableAnim(float _Delay, Animator activateObject)
-    {
-        yield return new WaitForSecondsRealtime(_Delay);
-        activateObject.enabled = true;
-    }
-    #endregion
-
     #region GetRewardedCoins
-    public void GetRewardedCoins()
+    public void NeedMoreCoins()
     {
         rewardType = RewardType.Coins;
         needMoreCoins.SetActive(true);
+    }
+    public void GetRewardedCoins()
+    {
+        rewardType = RewardType.Coins;
+        CheckVideoStatus();
     }
     #endregion
 
@@ -964,12 +927,25 @@ public class PartyLook : MonoBehaviour
             coinsAdder.addNow = true;
         }
     }
+    IEnumerator FinalAddCoins(float delay , int Coins)
+    {
+        yield return new WaitForSeconds(delay);
+        if (FinalcoinsAdder)
+        {
+            FinalcoinsAdder.addCoins = Coins;
+            FinalcoinsAdder.addNow = true;
+        }
+    }
 
     IEnumerator LoadingScene(string str)
     {
-        yield return new WaitForSeconds(0.5f);
         LoadingPanel.SetActive(true);
-        yield return new WaitForSeconds(6f);
+        fillBar.fillAmount = 0;
+        while (fillBar.fillAmount < 1)
+        {
+            fillBar.fillAmount += Time.deltaTime / 4;
+            yield return null;
+        }
         SceneManager.LoadScene(str);
     }
     #endregion
@@ -1049,7 +1025,7 @@ public class PartyLook : MonoBehaviour
         //    else
         //    {
                 videoNotAvalible.SetActive(true);
-        //        Invoke("videoPanelOf", 1.3f);
+                Invoke("videoPanelOf", 1.3f);
         //    }
         //}
         //else
@@ -1234,6 +1210,7 @@ public class PartyLook : MonoBehaviour
     //        }
     //    }
     //}
+
     #region DressOpponent
     private void DressUpOpponent()
     {
@@ -1388,7 +1365,9 @@ public class PartyLook : MonoBehaviour
         int playerTotal = 0, opTotal = 0;
         yield return new WaitForSeconds(0.5f);
         if (dressValue > 1) StartCoroutine(scoreImage(uIElements.dressImage));
+        yield return new WaitForSeconds(0.5f);
         if (shoeValue > 1) StartCoroutine(scoreImage(uIElements.shoesImage));
+        yield return new WaitForSeconds(0.5f);
         if (hairValue > 1) StartCoroutine(scoreImage(uIElements.hairImage));
         yield return new WaitForSeconds(0.5f);
         playerRank = dressValue + shoeValue + bgValue  + hairValue ;
@@ -1396,7 +1375,9 @@ public class PartyLook : MonoBehaviour
         oppElements.playerTotal.text = playerTotal.ToString();
         yield return new WaitForSeconds(0.5f);
         if (oppodressValue > 1) StartCoroutine(scoreImage(oppElements.oppodressImage));
+        yield return new WaitForSeconds(0.5f);
         if (opposhoeValue > 1) StartCoroutine(scoreImage(oppElements.opposhoesImage));
+        yield return new WaitForSeconds(0.5f);
         if (oppohairValue > 1) StartCoroutine(scoreImage(oppElements.oppohairImage));
         yield return new WaitForSeconds(0.5f);
         oppoRank = oppodressValue + opposhoeValue + oppohairValue;
@@ -1443,12 +1424,10 @@ public class PartyLook : MonoBehaviour
         opTotal += oppoRank;
         oppElements.oppoTotal.text = opTotal.ToString();
         yield return new WaitForSeconds(3);
-
         if (playerTotal >= opTotal)
         {
-            //Wincoin = playerTotal / 100;
-            //WinrewardText.text = Wincoin.ToString();
             //player win
+            Wincoin = playerTotal / 100;
             if (winSFX) winSFX.Play();
             yield return new WaitForSeconds(1f);
             CharactorMover.transform.SetSiblingIndex(-1);
@@ -1458,22 +1437,20 @@ public class PartyLook : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             CharactorMover.Move(new Vector3(0, -150, 0), 0.5f, true, false);
             yield return new WaitForSeconds(1f);
-            //Confetti.gameObject.SetActive(true);
-            yield return new WaitForSeconds(4);
-            //Confetti.gameObject.SetActive(false);
+            Confetti.gameObject.SetActive(true);
+            WinnerPanel.SetActive(true);
+            StartCoroutine(FinalAddCoins(0.5f,2000));
+            yield return new WaitForSeconds(2);
             LevelComplete.SetActive(true);
             yield return new WaitForSeconds(1);
-            //oppElements.playerinWin.transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-            //oppElements.botinWin.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 0.5f);
-            //SaveData.Instance.levelPassed++;
-            //SaveData.Instance.cityProps.cityLocked[SaveData.Instance.levelPassed] = false;
+            WinnerPanel.transform.GetChild(0).gameObject.SetActive(false);
             Rai_SaveLoad.SaveProgress();
         }
         else
         {
+            //oppoWin
             if (LoseSFX) LoseSFX.Play();
-            //Wincoin = opTotal / 200;
-            //WinrewardText.text = Wincoin.ToString();
+            Wincoin = opTotal / 200;
             yield return new WaitForSeconds(1f);
             OpponentMover.transform.SetSiblingIndex(-1);
             JudgementPanel.SetActive(false);
@@ -1482,144 +1459,11 @@ public class PartyLook : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             OpponentMover.Move(new Vector3(0, -150, 0), 0.5f, true, false);
             yield return new WaitForSeconds(1f);
-            //Confetti.gameObject.SetActive(true);
-            yield return new WaitForSeconds(4);
-            //Confetti.gameObject.SetActive(false);
-            //uIElements.LevelComplete.SetActive(true);
+            LevelComplete.SetActive(true);
+            WinnerPanel.transform.GetChild(0).gameObject.SetActive(false);
             yield return new WaitForSeconds(1);
-            //oppElements.botinWin.transform.DOScale(new Vector3(1, 1, 1), 0.5f);
-            //oppElements.playerinWin.transform.DOScale(new Vector3(0.5f, 0.5f, 0.5f), 0.5f);
         }
     }
-    //IEnumerator StartComparing()
-    //{
-
-    //    int playerRank = 0;
-    //    int oppoRank = 0;
-    //    int playerTotal = 0, opTotal = 0;
-    //    yield return new WaitForSeconds(2);
-    //    oppElements.Comparetext.text = "DressUp";
-    //    VoteCatSFX.Play();
-    //    //CompareButton.Play();
-    //    yield return new WaitForSeconds(2f);
-    //    playerRank = dressValue + shoeValue  + bgValue  + BouquetValue;
-    //    oppoRank = oppodressValue + opposhoeValue + oppoBouquetValue;
-    //    playerTotal += playerRank;
-    //    opTotal += oppoRank;
-    //    oppElements.playerVoteText.text = playerRank.ToString();
-    //    oppElements.oppoVoteText.text = oppoRank.ToString();
-    //   // VoteScore.gameObject.SetActive(true);
-    //    VoteGivenSFX.Play();
-    //    //VoteScore.Play();
-    //    yield return new WaitForSeconds(1f);
-    //    oppElements.playerTotal.gameObject.SetActive(false);
-    //    oppElements.playerTotal.gameObject.SetActive(true);
-    //    oppElements.oppoTotal.gameObject.SetActive(false);
-    //    oppElements.oppoTotal.gameObject.SetActive(true);
-    //    oppElements.playerTotal.text = playerTotal.ToString();
-    //    oppElements.oppoTotal.text = opTotal.ToString();
-    //    yield return new WaitForSeconds(1f);
-    //    oppElements.Comparetext.text = "MakeUp";
-    //    VoteCatSFX.Play();
-    //    //CompareButton.Play();
-    //    yield return new WaitForSeconds(1f);
-    //    playerRank = eyeshadesValue + lipstickValue + hairValue + BlushValue ;
-    //    oppoRank = oppoeyeshadesValue + oppolipstickValue + oppohairValue  + oppoBlushValue;
-    //    playerTotal += playerRank;
-    //    opTotal += oppoRank;
-    //    oppElements.playerVoteText.text = playerRank.ToString();
-    //    oppElements.oppoVoteText.text = oppoRank.ToString();
-    //    VoteGivenSFX.Play();
-    //    //VoteScore.Play();
-    //    yield return new WaitForSeconds(1f);
-    //    oppElements.playerTotal.gameObject.SetActive(false);
-    //    oppElements.playerTotal.gameObject.SetActive(true);
-    //    oppElements.oppoTotal.gameObject.SetActive(false);
-    //    oppElements.oppoTotal.gameObject.SetActive(true);
-    //    oppElements.playerTotal.text = playerTotal.ToString();
-    //    oppElements.oppoTotal.text = opTotal.ToString();
-    //    yield return new WaitForSeconds(1f);
-    //    oppElements.Comparetext.text = "Jewellery";
-    //    VoteCatSFX.Play();
-    //    //CompareButton.Play();
-    //    yield return new WaitForSeconds(1f);
-    //    playerRank = bangleValue + earringValue + necklaceValue + HairBandValue + EyeBrowValue + GlassesValue;
-    //    oppoRank = oppobangleValue + oppoearringValue + opponecklaceValue + oppoHairBandValue + oppoEyeBrowValue + oppoGlassesValue;
-    //    playerTotal += playerRank;
-    //    opTotal += oppoRank;
-    //    oppElements.playerVoteText.text = playerRank.ToString();
-    //    oppElements.oppoVoteText.text = oppoRank.ToString();
-    //    VoteGivenSFX.Play();
-    //    //VoteScore.Play();
-    //    yield return new WaitForSeconds(1f);
-    //    oppElements.playerTotal.gameObject.SetActive(false);
-    //    oppElements.playerTotal.gameObject.SetActive(true);
-    //    oppElements.oppoTotal.gameObject.SetActive(false);
-    //    oppElements.oppoTotal.gameObject.SetActive(true);
-    //    oppElements.playerTotal.text = playerTotal.ToString();
-    //    oppElements.oppoTotal.text = opTotal.ToString();
-    //    yield return new WaitForSeconds(3);
-    //    CoinSlot.SetActive(true);
-
-    //    if (playerTotal >= opTotal)
-    //    {
-    //        //player win
-    //    if (winSFX)winSFX.Play() ;
-    //        yield return new WaitForSeconds(1f);
-    //        CharactorMover.transform.SetSiblingIndex(-1);
-    //        JudgementPanel.SetActive(false);
-    //        yield return new WaitForSeconds(1f);
-    //        OpponentMover.Move(new Vector3(1500, -150, 0), 0.5f, true, false);
-    //        yield return new WaitForSeconds(0.3f);
-    //        CharactorMover.Move(new Vector3(0, -150, 0), 0.5f, true, false);
-    //        yield return new WaitForSeconds(1f);
-    //        CoinSlot.SetActive(true);
-    //        Confetti.gameObject.SetActive(true);
-    //        StartCoroutine(AddCoins(0.1f, 2000));
-    //        yield return new WaitForSeconds(3);
-    //        LevelComplete.SetActive(true);
-    //        CoinSlot.SetActive(false);
-    //    }
-    //    else
-    //    {
-    //    if (LoseSFX)LoseSFX.Play() ;
-    //        yield return new WaitForSeconds(1f);
-    //        OpponentMover.transform.SetSiblingIndex(-1);
-    //        JudgementPanel.SetActive(false);
-    //        yield return new WaitForSeconds(1f);
-    //        CharactorMover.Move(new Vector3(-1500, -150, 0), 0.5f, true, false);
-    //        yield return new WaitForSeconds(0.3f);
-    //        OpponentMover.Move(new Vector3(0, -150, 0), 0.5f, true, false);
-    //        yield return new WaitForSeconds(1f);
-    //        CoinSlot.SetActive(true);
-    //        Confetti.gameObject.SetActive(true);
-    //        StartCoroutine(AddCoins(0.1f, 500));
-    //        yield return new WaitForSeconds(3);
-    //        LevelComplete.SetActive(true);
-    //        CoinSlot.SetActive(false);
-
-    //    }
-    //}
-
-    //IEnumerator FindOponent()
-    //{
-    //    yield return new WaitForSeconds(1f);
-
-    //    for (int i = 0; i < Random.Range(10, 25); i++)
-    //    {
-    //        oppElements.botImagevspanel.gameObject.SetActive(false);
-    //        oppElements.botImagevspanel.gameObject.SetActive(true);
-    //        oppElements.botImagevspanel.sprite = botSprites[Random.Range(0, botSprites.Length)];
-    //        oppElements.IdTextvspanel.gameObject.SetActive(false);
-    //        oppElements.IdTextvspanel.gameObject.SetActive(true);
-    //        oppElements.IdTextvspanel.text = Random.Range(100000, 999999).ToString();
-    //        yield return new WaitForSeconds(0.1f);
-    //    }
-    //    yield return new WaitForSeconds(0.8f);
-    //    LetsStartBtn.SetActive(true);
-    //    oppElements.botImageInAnim.sprite = oppElements.botImagevspanel.sprite;
-    //    oppElements.BotIdTextAnim.text = oppElements.IdTextvspanel.text;
-    //}
 
 }
 

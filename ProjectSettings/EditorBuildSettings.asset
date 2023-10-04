@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Selection.unity
     guid: d0d87613ec4018947911802a6ce73b20
+  - enabled: 1
+    path: Assets/Scenes/PartyMode.unity
+    guid: 5012adf3e59ec6b4d9deb99801ae9a36
   m_configObjects: {}

@@ -29,6 +29,23 @@ public class PartyProps
     public List<bool> BGLocked = new List<bool>();
 }
 [System.Serializable]
+public class CasualProps
+{
+    public List<bool> dressLocked = new List<bool>();
+    public List<bool> hairbandLocked = new List<bool>();
+    public List<bool> hairLocked = new List<bool>();
+    public List<bool> bangelsLocked = new List<bool>();
+    public List<bool> shoesLocked = new List<bool>();
+    public List<bool> earRingLocked = new List<bool>();
+    public List<bool> eyeShadesLocked = new List<bool>();
+    public List<bool> lipsTickLocked = new List<bool>();
+    public List<bool> necklaceLocked = new List<bool>();
+    public List<bool> noseRingLocked = new List<bool>();
+    public List<bool> bagLocked = new List<bool>();
+    public List<bool> BlushLocked = new List<bool>();
+    public List<bool> BGLocked = new List<bool>();
+}
+[System.Serializable]
 public class SelectionElements
 {
     public List<bool> LevelLock = new List<bool>(); 
@@ -55,15 +72,16 @@ public class SaveData
     public int LevelsUnlocked = 1;
     public int EventsUnlocked = 0;
     public int PlayerSelectedAvatar = 0;
-    public int opponentSelectedAvatar = 0;
+    public Sprite opponentSelectedAvatar;
     public int Selectedvape;
     public string ProfileName;
     public bool ProfileCreated = false;
     public bool isSound = true, isMusic = true, isVibration = true, isRightControls = true;
-    public int Coins = 0;
+    public int Coins = 2000;
     public List<PlayerProps> Players = new List<PlayerProps>();
     public SelectionElements SelectionProps = new SelectionElements();
     public PartyProps partyProps = new PartyProps();
+    public CasualProps casualProps = new CasualProps();
     public string hashOfSaveData;
 
     //Constructor to save actual GameData
@@ -71,7 +89,7 @@ public class SaveData
 
     //Constructor to check any tampering with the SaveData
     public SaveData(bool ads, int levelsUnlocked, int eventsUnlocked, int coins, bool soundOn, bool musicOn, bool vibrationOn, bool rightControls, List<PlayerProps> _players, 
-        SelectionElements _selectionElements, PartyProps _partyProps)
+        SelectionElements _selectionElements, PartyProps _partyProps, CasualProps _casualProps)
     {
         RemoveAds = ads;
         LevelsUnlocked = levelsUnlocked;
@@ -84,5 +102,6 @@ public class SaveData
         Players = _players;
         SelectionProps = _selectionElements;
         partyProps = _partyProps;
+        casualProps = _casualProps;
     }
 }

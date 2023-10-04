@@ -13,6 +13,7 @@ public class LevelSelection : MonoBehaviour
     public Text IdTextvspanel;
     public Sprite[] Sprites;
     public Sprite[] IconsSprites;
+    public Button[] IconsBtn;
     public GameObject[] characters;
     public Button leftBtn,rightBtn;
     private List<ItemInfo> lighterList = new List<ItemInfo>();
@@ -291,8 +292,14 @@ public class LevelSelection : MonoBehaviour
     }
     public void PlayerIconsSelection(int index)
     {
+        for (int i = 0; i < IconsBtn.Length; i++)
+        {
+            IconsBtn[i].transform.localScale = new Vector3(1, 1, 1);
+        }
         SaveData.Instance.PlayerSelectedAvatar = index;
+        IconsBtn[index].transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         PlayericonImage.sprite = IconsSprites[index];
+
         Rai_SaveLoad.SaveProgress();
     }
     IEnumerator FindOponent()
@@ -310,10 +317,8 @@ public class LevelSelection : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         yield return new WaitForSeconds(1f);
-        //LetsStartBtn.SetActive(true);
-        //botImageInAnim.sprite = botImagevspanel.sprite;
-        //BotIdTextAnim.text = IdTextvspanel.text;
-        loadScene(SelectesScene);
+        SaveData.Instance.opponentSelectedAvatar = opponentIconImage.sprite;
+        StartCoroutine(loadScene(SelectesScene));
     }
 
 }

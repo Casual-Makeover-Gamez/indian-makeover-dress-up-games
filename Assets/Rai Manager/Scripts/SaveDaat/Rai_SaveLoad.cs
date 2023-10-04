@@ -10,7 +10,7 @@ public class Rai_SaveLoad
     {
         SaveData CheckSave = new SaveData(SaveData.Instance.RemoveAds, SaveData.Instance.LevelsUnlocked, SaveData.Instance.EventsUnlocked, SaveData.Instance.Coins,
           SaveData.Instance.isSound, SaveData.Instance.isMusic, SaveData.Instance.isVibration, SaveData.Instance.isRightControls, SaveData.Instance.Players,
-          SaveData.instance.SelectionProps,SaveData.Instance.partyProps);
+          SaveData.instance.SelectionProps,SaveData.Instance.partyProps,SaveData.Instance.casualProps);
         string saveDataString = JsonUtility.ToJson(CheckSave, true);
         SaveData.Instance.hashOfSaveData = HashGenerator(saveDataString);
         string saveDataHashed = JsonUtility.ToJson(SaveData.Instance, true);
