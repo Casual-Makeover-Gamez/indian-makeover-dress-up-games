@@ -618,7 +618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1000, y: -150}
+  m_AnchoredPosition: {x: 109, y: -150}
   m_SizeDelta: {x: 497, y: 1327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4779326
@@ -1436,8 +1436,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -2230,8 +2230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.3, y: 496.3}
-  m_SizeDelta: {x: 153, y: 74}
+  m_AnchoredPosition: {x: -18.3, y: 500.6}
+  m_SizeDelta: {x: 161, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37178139
 MonoBehaviour:
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c42bf9e6383bc6b4e907f4bc2bf9c9f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d522751ffa359140956407b399e6204, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3750,8 +3750,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -3759,7 +3759,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CasualMode
+          m_StringArgument: IndianMode
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1206261111}
@@ -5190,8 +5190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.2, y: 564.2}
-  m_SizeDelta: {x: 129, y: 53}
+  m_AnchoredPosition: {x: -19.2, y: 565}
+  m_SizeDelta: {x: 129, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &99704867
 CanvasRenderer:
@@ -5221,7 +5221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 013315acef8d8144381630deabfbc610, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fcbcc520ed8b054a82abd047a664413, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7707,7 +7707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6d52dfeae0fe8f549b9295488efbe4b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4256e6da60ba2b4da00b5b565b0c9d4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8815,8 +8815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.95, y: -56.4}
-  m_SizeDelta: {x: 585, y: 1024}
+  m_AnchoredPosition: {x: -22.27, y: -150.7}
+  m_SizeDelta: {x: 1092, y: 1269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &159585696
 CanvasRenderer:
@@ -8846,7 +8846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22716d31d7a48444da3dbcd44bc37c61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8206cbc0f3e59794a8fd9a596beb513d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12256,8 +12256,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -13484,8 +13484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.7, y: 169.4}
-  m_SizeDelta: {x: 59, y: 64}
+  m_AnchoredPosition: {x: 118.1, y: 173}
+  m_SizeDelta: {x: 72, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &263248623
 CanvasRenderer:
@@ -13515,7 +13515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4f0781e278c63db4ba58e6c989f15c37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50aef02d2529d6b478481240aecd14de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15506,8 +15506,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: CheckVideoStatus
         m_Mode: 1
         m_Arguments:
@@ -17793,8 +17793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: Submit
         m_Mode: 1
         m_Arguments:
@@ -20019,8 +20019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.8, y: -587.4}
-  m_SizeDelta: {x: 367, y: 210}
+  m_AnchoredPosition: {x: -78.8, y: -588.6}
+  m_SizeDelta: {x: 374, y: 203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &398868517
 CanvasRenderer:
@@ -20050,7 +20050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a843acafd9d83f478a9b846f17384ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74fdb18b9eeb6774380b1a06341b222a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20424,8 +20424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.5, y: 501.4}
-  m_SizeDelta: {x: 62, y: 27}
+  m_AnchoredPosition: {x: -19.5, y: 497}
+  m_SizeDelta: {x: 54, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420941004
 MonoBehaviour:
@@ -20447,7 +20447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c44eedb0add8f543a835af96f319a0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a31e0c87f7db741b3e7fda3971791e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21470,8 +21470,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -23091,8 +23091,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -25963,8 +25963,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -30518,8 +30518,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -30632,8 +30632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.1, y: 624.1}
-  m_SizeDelta: {x: 167, y: 121}
+  m_AnchoredPosition: {x: -19.1, y: 684.7}
+  m_SizeDelta: {x: 179, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593978085
 MonoBehaviour:
@@ -30655,7 +30655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9ed727adb219aa54c8722df5c105bd80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d46c0074321752c4084ad8c2bfd73f31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30795,8 +30795,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -35963,7 +35963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e25928a153ed23d47b154c1cf882d20c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 258f5c19632c7684282389151c9914bc, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -37289,8 +37289,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: GetRewardedCoins
         m_Mode: 1
         m_Arguments:
@@ -40800,7 +40800,7 @@ GameObject:
   - component: {fileID: 832626321}
   - component: {fileID: 832626320}
   m_Layer: 5
-  m_Name: BagScroller
+  m_Name: HandItemsScroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41460,7 +41460,7 @@ GameObject:
   - component: {fileID: 836031879}
   - component: {fileID: 836031881}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41569,8 +41569,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -46934,8 +46934,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.2, y: 499.9}
-  m_SizeDelta: {x: 302, y: 458}
+  m_AnchoredPosition: {x: -28.1, y: 472.5}
+  m_SizeDelta: {x: 295, y: 548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &914641349
 CanvasRenderer:
@@ -46965,7 +46965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dee1957d4026ba34fa468ba454e7a624, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c55114bc32783b47ba17d85db4d1c16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -52060,8 +52060,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -55583,8 +55583,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -56528,8 +56528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.3, y: 496.3}
-  m_SizeDelta: {x: 153, y: 74}
+  m_AnchoredPosition: {x: -18.3, y: 500.6}
+  m_SizeDelta: {x: 161, y: 92}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1101168794
 CanvasRenderer:
@@ -56559,7 +56559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 975ce48ec9da85149a129405717adb48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d522751ffa359140956407b399e6204, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59031,7 +59031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146589977}
-  - component: {fileID: 1146589979}
+  - component: {fileID: 1146589980}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -59054,7 +59054,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146589979
+--- !u!114 &1146589980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59063,14 +59063,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146589974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037550bac43033c47a36991d0359d32c, type: 3}
+  m_Script: {fileID: 11500000, guid: ab6dc60dc1c085342a03a63cb7337f3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selectedItem: 0
   uIElements:
     aLLScrollers: {fileID: 1819681874}
     dressScroller: {fileID: 1670335341}
-    BagScroller: {fileID: 832626318}
+    HandItemsScroller: {fileID: 832626318}
     HairBandScroller: {fileID: 1648556249}
     hairScrolleer: {fileID: 466735493}
     BangelsScroller: {fileID: 1537947721}
@@ -59083,7 +59083,7 @@ MonoBehaviour:
     BgScroller: {fileID: 1053650241}
     BlushScroller: {fileID: 1190174392}
     dressImage: {fileID: 1943833761}
-    BagImage: {fileID: 2026479917}
+    HandItemsImage: {fileID: 2026479917}
     HairBandImage: {fileID: 593978085}
     hairImage: {fileID: 2101316824}
     BangelsImage: {fileID: 1772959579}
@@ -59102,7 +59102,7 @@ MonoBehaviour:
     oppobangelImage: {fileID: 263248624}
     oppohairImage: {fileID: 914641350}
     oppoeyeShadesImage: {fileID: 99704868}
-    oppoBagImage: {fileID: 2088810927}
+    oppoHandItemsImage: {fileID: 2088810927}
     oppoearRingImage: {fileID: 1101168795}
     oppoHairBandImage: {fileID: 1372509151}
     opponeckLaceImage: {fileID: 2005165933}
@@ -59126,8 +59126,8 @@ MonoBehaviour:
   coinPanel: {fileID: 2024615854}
   WinnerPanel: {fileID: 224287282}
   LevelComplete: {fileID: 1469137894}
-  BotIcon: {fileID: 1838583648}
-  playerIcon: {fileID: 1568613710}
+  BotIcon: {fileID: 1568613710}
+  playerIcon: {fileID: 1838583648}
   LoadingPanel: {fileID: 140361252}
   fillBar: {fileID: 222136107}
   CharactorMover: {fileID: 4779327}
@@ -59149,143 +59149,143 @@ MonoBehaviour:
   CatagoryDefaultSprites: {fileID: 21300000, guid: e254eac36b2f3ac488913a21da9a3a4d, type: 3}
   CatagorySelectedSprites: {fileID: 21300000, guid: 44c48f10a089d5a488f196a83509e3cf, type: 3}
   dressSprites:
-  - {fileID: 21300000, guid: 59b01b86a0b03454c8fecdac7afee05b, type: 3}
-  - {fileID: 21300000, guid: f6e1dd6759958274ab6367b051394479, type: 3}
-  - {fileID: 21300000, guid: 51ed89778c1b8ef48a499375b96175fe, type: 3}
-  - {fileID: 21300000, guid: d7d5e1b60f72b9246890a6d8ebfa90bc, type: 3}
-  - {fileID: 21300000, guid: 86a6b83abed614c41bf43be8e62240a5, type: 3}
-  - {fileID: 21300000, guid: 9285b1b7ec462014fbcbe17c59250dbe, type: 3}
-  - {fileID: 21300000, guid: 1870edb7bc911fc4ebf22421c665427f, type: 3}
-  - {fileID: 21300000, guid: 7093eaddd52c8c54daf0c2d280954e3e, type: 3}
-  - {fileID: 21300000, guid: 2441035232f38234daca3c848092feee, type: 3}
-  - {fileID: 21300000, guid: 886a4db25ad02664aadc7056a928754d, type: 3}
-  BagSprites:
-  - {fileID: 21300000, guid: b6f483a0ab5846d48a11b63c8494b621, type: 3}
-  - {fileID: 21300000, guid: de8664b26849edc4db65415f2dffbcbe, type: 3}
-  - {fileID: 21300000, guid: a0fb79c3ebdd817499a572dc07430f59, type: 3}
-  - {fileID: 21300000, guid: 088dcf412ce513e48bde24f6078c10ba, type: 3}
-  - {fileID: 21300000, guid: ce68d5aa09d506f45832ad30f8a571fa, type: 3}
-  - {fileID: 21300000, guid: 274808d4e8b3ab2448809f4816bbaeda, type: 3}
-  - {fileID: 21300000, guid: c4a36960f7d064642818f819de079be0, type: 3}
-  - {fileID: 21300000, guid: 62c581e7fc679ac4486f5bff8db9cc0d, type: 3}
-  - {fileID: 21300000, guid: 51999dfdfb498584096c796cc5efa06f, type: 3}
-  - {fileID: 21300000, guid: 790a1327380428b42847a942799b1b65, type: 3}
+  - {fileID: 21300000, guid: 8206cbc0f3e59794a8fd9a596beb513d, type: 3}
+  - {fileID: 21300000, guid: 2823ecff8b2c78344bf0b2820fc26626, type: 3}
+  - {fileID: 21300000, guid: 7e547080595903f4d9b4f0018cba7087, type: 3}
+  - {fileID: 21300000, guid: 49add6f67c3dc204c98e62353c9e30f9, type: 3}
+  - {fileID: 21300000, guid: faad2d82635bc2849bf3d9aa0b920716, type: 3}
+  - {fileID: 21300000, guid: b47cc3a25d1ee5a418c462208c9cda43, type: 3}
+  - {fileID: 21300000, guid: 6dc724ae0baa02b419ed66b0a54e2ccc, type: 3}
+  - {fileID: 21300000, guid: c7a32b9cf7889fc43b9b75d52030a2c0, type: 3}
+  - {fileID: 21300000, guid: a0256b7f60ae8244bbb0ed97c347a35f, type: 3}
+  - {fileID: 21300000, guid: 78cf5b66cf4e2a74bb91ff3af9a829ff, type: 3}
+  HandItemSprites:
+  - {fileID: 21300000, guid: 8597d8fc59adcf44282056223eb9ffdf, type: 3}
+  - {fileID: 21300000, guid: f05de831f3130354d8dccc90b63ba758, type: 3}
+  - {fileID: 21300000, guid: f486f0d8ac9c52841988c3b05c0f03ba, type: 3}
+  - {fileID: 21300000, guid: b025afa584abcac4ba457542c9198d60, type: 3}
+  - {fileID: 21300000, guid: 1798b919c56d3ef4cadfe3fdf66a87bf, type: 3}
+  - {fileID: 21300000, guid: 8b0c9afd09ed4704fba5520d2d46cd94, type: 3}
+  - {fileID: 21300000, guid: 97a9085a8c432aa4d94fddf427b1f674, type: 3}
+  - {fileID: 21300000, guid: d6002d00105892648b1e45e487d58cbb, type: 3}
+  - {fileID: 21300000, guid: 145bfbd215214b14995c142d99f13a4a, type: 3}
+  - {fileID: 21300000, guid: a1208e341b140e0498cd78d909209633, type: 3}
   HairBandSprites:
-  - {fileID: 21300000, guid: 9ed727adb219aa54c8722df5c105bd80, type: 3}
-  - {fileID: 21300000, guid: ac9e4b282400b174d91b67cbf16b5ca1, type: 3}
-  - {fileID: 21300000, guid: 15e1e41d4f7a9d8489b145ac82599174, type: 3}
-  - {fileID: 21300000, guid: 468574612ebfa204494922ce0723c202, type: 3}
-  - {fileID: 21300000, guid: 21d3deaa4e4f1d340afcd12c28d3d59e, type: 3}
-  - {fileID: 21300000, guid: 43526b9c934bcc0468eb313ac9ed1544, type: 3}
-  - {fileID: 21300000, guid: fd658a46b3cb948479943678179a74e3, type: 3}
-  - {fileID: 21300000, guid: 40f49a4643386b240836c0b823063ab2, type: 3}
-  - {fileID: 21300000, guid: bf9c1252e4777fe48b70538cc1b0e0c1, type: 3}
-  - {fileID: 21300000, guid: d014a60c43e14724193df562daa6646d, type: 3}
+  - {fileID: 21300000, guid: d46c0074321752c4084ad8c2bfd73f31, type: 3}
+  - {fileID: 21300000, guid: fec89e5fd1b323640be1df3cf6d12d00, type: 3}
+  - {fileID: 21300000, guid: 731673db2b805894e87600709a8a4ccf, type: 3}
+  - {fileID: 21300000, guid: ea96b6294d7ab554aa48566b3692643a, type: 3}
+  - {fileID: 21300000, guid: f35b8da4677aff14d99dd88866cdd116, type: 3}
+  - {fileID: 21300000, guid: 843f5d0765a24624fa3fb9faecb432ff, type: 3}
+  - {fileID: 21300000, guid: b29c755cd9e481540969edfd1f651969, type: 3}
+  - {fileID: 21300000, guid: 2cc9fc0948a24304d94a3158e110a9cf, type: 3}
+  - {fileID: 21300000, guid: 3b9fb223651f37045852873d577c3a86, type: 3}
+  - {fileID: 21300000, guid: c19d6d971559cda4cade7bbe3d83bac2, type: 3}
   hairSprites:
-  - {fileID: 21300000, guid: 488f0d1bcef2c7741b5967a74b645c61, type: 3}
-  - {fileID: 21300000, guid: b82b11d5009094649b8ee62462e28092, type: 3}
-  - {fileID: 21300000, guid: c4b0f710398f80940841a928d2c4910f, type: 3}
-  - {fileID: 21300000, guid: bd16fcb6f1a1c774c94e79bc61356867, type: 3}
-  - {fileID: 21300000, guid: 8dc86aa39ec7abe48a1424966d39f3b2, type: 3}
-  - {fileID: 21300000, guid: e7161d3184fadfb479ed8b202efb61d3, type: 3}
-  - {fileID: 21300000, guid: 2494d3d393fd42142b0250ae06501fc2, type: 3}
-  - {fileID: 21300000, guid: ab8e1bd470bcc244199f65bd5fe1655e, type: 3}
-  - {fileID: 21300000, guid: 31b4024caa60fea4cb1f3b52dadac60e, type: 3}
-  - {fileID: 21300000, guid: 7ee6e94667e01bd48b1428ba61a783e8, type: 3}
+  - {fileID: 21300000, guid: 4c55114bc32783b47ba17d85db4d1c16, type: 3}
+  - {fileID: 21300000, guid: 40c08e4cea1087b4eac959f208e9dc70, type: 3}
+  - {fileID: 21300000, guid: 446ffc439130af24bae4be121e770249, type: 3}
+  - {fileID: 21300000, guid: 5c8d7e6322be7aa489e2967431ff35ae, type: 3}
+  - {fileID: 21300000, guid: 58911fd76aca8ea42b7da2a1eded4c31, type: 3}
+  - {fileID: 21300000, guid: 846ec00dc08132244bae5567f8c0936c, type: 3}
+  - {fileID: 21300000, guid: 8b7a490301f7dc84dbe10a3b7d4992db, type: 3}
+  - {fileID: 21300000, guid: 362ffc8761561f04a9b97b991f6bf37d, type: 3}
+  - {fileID: 21300000, guid: d4882f939d4ed994fa01879460f5df2c, type: 3}
+  - {fileID: 21300000, guid: 27bcde0634944294cbcc1b5586ecc83d, type: 3}
   BangelsSprites:
-  - {fileID: 21300000, guid: d8200b010dc425c46b3ebee0caadfbe1, type: 3}
-  - {fileID: 21300000, guid: 49955e6857d77a541b0c9448d5781027, type: 3}
-  - {fileID: 21300000, guid: 401bd434a2c0f7343a597ff1b53ab916, type: 3}
-  - {fileID: 21300000, guid: 504e6816f37764147ad677149bccff80, type: 3}
-  - {fileID: 21300000, guid: 309d0fa108eb9b8429628be045602dfd, type: 3}
-  - {fileID: 21300000, guid: 71e619a4ee371bb459838875aa8affd3, type: 3}
-  - {fileID: 21300000, guid: 8b92dc1084164f4418ebf59a2bfd5343, type: 3}
-  - {fileID: 21300000, guid: 87e4c23ac9f7c3a47a2f7bf3ab9a65ba, type: 3}
-  - {fileID: 21300000, guid: 265c52346f02d0a45a4dfa703b792f95, type: 3}
-  - {fileID: 21300000, guid: 0474592af8f2e2d4199f41920f829080, type: 3}
+  - {fileID: 21300000, guid: 50aef02d2529d6b478481240aecd14de, type: 3}
+  - {fileID: 21300000, guid: 904f3a9cb1cb5804bbb8a9638dfef572, type: 3}
+  - {fileID: 21300000, guid: fd3cce1ec9cf5624284474ce988bd02c, type: 3}
+  - {fileID: 21300000, guid: cf9b4c442d15fbc4793b7f5f9b01e009, type: 3}
+  - {fileID: 21300000, guid: 26f2bd6e3724fd146b63a9318a3889b9, type: 3}
+  - {fileID: 21300000, guid: 1749fb56fd594214b8367a4336ff0753, type: 3}
+  - {fileID: 21300000, guid: 9b0e0dc47126f8b46ad2e6228e49fcda, type: 3}
+  - {fileID: 21300000, guid: af0216771b506a047a49f28862e2058b, type: 3}
+  - {fileID: 21300000, guid: 3ec97b98c5ea2da47b31adc55a3273e6, type: 3}
+  - {fileID: 21300000, guid: c9bd2b13d756bad47b967910ea731841, type: 3}
   ShoesSprites:
-  - {fileID: 21300000, guid: 55ec9e16cd43dfb4cbeaac00133a886b, type: 3}
-  - {fileID: 21300000, guid: 07f0e147e3db9bb47b14bd4e90971076, type: 3}
-  - {fileID: 21300000, guid: 4ce05bae8d1df2f41910c62294696733, type: 3}
-  - {fileID: 21300000, guid: 62c12a87ecc20084a84de29d0a572a3b, type: 3}
-  - {fileID: 21300000, guid: f5cd814ac9e464241852d3fec2bbf4a4, type: 3}
-  - {fileID: 21300000, guid: 18c6564bfe6e5074897ca35170c955e5, type: 3}
-  - {fileID: 21300000, guid: dfa508d161551c5448ea6bd6b20dfc52, type: 3}
-  - {fileID: 21300000, guid: 2fdd130d08e54da478ad0fd14776f78e, type: 3}
-  - {fileID: 21300000, guid: f55d85433adc464448a68640e23c97dd, type: 3}
-  - {fileID: 21300000, guid: d0e6aeec1287f7a4ca5aa6b0610fdefb, type: 3}
+  - {fileID: 21300000, guid: 74fdb18b9eeb6774380b1a06341b222a, type: 3}
+  - {fileID: 21300000, guid: 0afc39faeca293f409fca0177c5ec0e2, type: 3}
+  - {fileID: 21300000, guid: 65d32efb3c141d4488a0c2b24e4f27c0, type: 3}
+  - {fileID: 21300000, guid: 25d816037e743a74589aab26c9abbf1a, type: 3}
+  - {fileID: 21300000, guid: 68b41f177b215ec48a4ce513b2e1c146, type: 3}
+  - {fileID: 21300000, guid: 9d75354dc21e6034ab366a2b5e8e9e96, type: 3}
+  - {fileID: 21300000, guid: b1e7a52dc2c3bd74e9676bbec4f4df02, type: 3}
+  - {fileID: 21300000, guid: 7ebcf6d7081346b47a49062717e4f2ff, type: 3}
+  - {fileID: 21300000, guid: c2c8c631f2b241b4a97ad765464c8f44, type: 3}
+  - {fileID: 21300000, guid: 4f808fb38418db147962686a234cf82f, type: 3}
   earRingsSprites:
-  - {fileID: 21300000, guid: c42bf9e6383bc6b4e907f4bc2bf9c9f3, type: 3}
-  - {fileID: 21300000, guid: 4e7a59ddf5e605841a3ba416eeffd104, type: 3}
-  - {fileID: 21300000, guid: d5193da5bddf252418a1e5a13c20af42, type: 3}
-  - {fileID: 21300000, guid: c558cba1fab79af409d9c3173be4d1fa, type: 3}
-  - {fileID: 21300000, guid: 37241370f1c73ff428ebea6a980be5f9, type: 3}
-  - {fileID: 21300000, guid: c34ff2e84aff35d478befd724b2160a8, type: 3}
-  - {fileID: 21300000, guid: eb1064ffdd5f8aa42b84bf25c92971ff, type: 3}
-  - {fileID: 21300000, guid: 919b718f619d9f64c853f82ee5a41955, type: 3}
-  - {fileID: 21300000, guid: b35f4d068118c11489f868a3f4fde1c8, type: 3}
-  - {fileID: 21300000, guid: 8746f85926913454d993b3f5c73e3743, type: 3}
+  - {fileID: 21300000, guid: 9d522751ffa359140956407b399e6204, type: 3}
+  - {fileID: 21300000, guid: b2cde9fb6f0632c4e8ed911be839ad3c, type: 3}
+  - {fileID: 21300000, guid: 08c706a2900ef7e42a1f8a8728441aaf, type: 3}
+  - {fileID: 21300000, guid: 6ebf90f71d08a3241ba25a4f37291931, type: 3}
+  - {fileID: 21300000, guid: 85e8db56fb57c9f4d8c65c36c62265ff, type: 3}
+  - {fileID: 21300000, guid: 9c6cdeb85147b014a8d131a8e59b9051, type: 3}
+  - {fileID: 21300000, guid: 189817e0b69be5944a0253722353723f, type: 3}
+  - {fileID: 21300000, guid: c7824009b09544c4b8f8f37ae3e2c07a, type: 3}
+  - {fileID: 21300000, guid: 355a0e15b8f6604478e13edadbaa72ff, type: 3}
+  - {fileID: 21300000, guid: dad2b051e58aec64e978a8b25d9294a1, type: 3}
   EyeShadesSprites:
-  - {fileID: 21300000, guid: 592d654343ec30646b4b2f0637de28cb, type: 3}
-  - {fileID: 21300000, guid: f0b91429e93393349adaf6864ada180e, type: 3}
-  - {fileID: 21300000, guid: 1e9e75474a47e914ea1f31e849c3577c, type: 3}
-  - {fileID: 21300000, guid: ec73f519493c01840a83296fbad57a1b, type: 3}
-  - {fileID: 21300000, guid: 8aee924e89e00c24487a97f6b48ba641, type: 3}
-  - {fileID: 21300000, guid: b3075772ce9e3154b9e9300bc51dcd06, type: 3}
-  - {fileID: 21300000, guid: b2ac0af71d63efa4ba4ecc64246668bc, type: 3}
-  - {fileID: 21300000, guid: 186ac0dabda274448a9d47d2af11e1a9, type: 3}
-  - {fileID: 21300000, guid: bfbe38ac3eb5c6c449758808ef5b6aad, type: 3}
-  - {fileID: 21300000, guid: 50bbc7cf29ae35b46baf723aa65ffd03, type: 3}
+  - {fileID: 21300000, guid: 5fcbcc520ed8b054a82abd047a664413, type: 3}
+  - {fileID: 21300000, guid: 2c45aee664d56b846b46b1f628ad444e, type: 3}
+  - {fileID: 21300000, guid: 8326cf64cc8580245a62b598540ab589, type: 3}
+  - {fileID: 21300000, guid: e3aabaa024053334bae60dea4f451a3f, type: 3}
+  - {fileID: 21300000, guid: 77e92802e14e9d8468de86b9499037a2, type: 3}
+  - {fileID: 21300000, guid: d9e7f8ba6e3e116448f868110b7c7c0b, type: 3}
+  - {fileID: 21300000, guid: ca896233c5c025e4e8aa0cd82104fee0, type: 3}
+  - {fileID: 21300000, guid: cf6c0be7513b3df4ba96306937ba2267, type: 3}
+  - {fileID: 21300000, guid: e64012b8e0105da4fbd9be41f36e3e42, type: 3}
+  - {fileID: 21300000, guid: 3d918362174ad3c4dbbc4dc5ce5b64e8, type: 3}
   lipsTickSprites:
-  - {fileID: 21300000, guid: 4c44eedb0add8f543a835af96f319a0b, type: 3}
-  - {fileID: 21300000, guid: 8de50ec4746fd054d9076ee338e953eb, type: 3}
-  - {fileID: 21300000, guid: ee8ff9c987afc8a44ab83fc93193b35d, type: 3}
-  - {fileID: 21300000, guid: 3e0cf69570d996b4785177a8e4761c67, type: 3}
-  - {fileID: 21300000, guid: 05a09b9391d58bb4bb8dc29dbf32c576, type: 3}
-  - {fileID: 21300000, guid: e8fac211a26f43242a096cfc4740351f, type: 3}
-  - {fileID: 21300000, guid: 39ef29c8ffd1e2842a1a70cfa808ced5, type: 3}
-  - {fileID: 21300000, guid: 9f024f2bd319ab448b35098b59b00711, type: 3}
-  - {fileID: 21300000, guid: 14fd64417f081fc4eb637b32072e729a, type: 3}
-  - {fileID: 21300000, guid: d2202af5a70ea65479d5d2b8bb2af88d, type: 3}
+  - {fileID: 21300000, guid: 58a31e0c87f7db741b3e7fda3971791e, type: 3}
+  - {fileID: 21300000, guid: 315677151f3f86a4ab8615d43e297682, type: 3}
+  - {fileID: 21300000, guid: 91386e4e99ea877479355ac16799f532, type: 3}
+  - {fileID: 21300000, guid: f40b62fb1dd8b3b47bda6f296194902b, type: 3}
+  - {fileID: 21300000, guid: ca7a291600af33f4cb790bf98e14c0d2, type: 3}
+  - {fileID: 21300000, guid: 7da46bbab0fb814498e0d86bcf32d8fa, type: 3}
+  - {fileID: 21300000, guid: bda70fc9141a6d3409e45aff805d0f90, type: 3}
+  - {fileID: 21300000, guid: 86c2ab8032318a34c9c77baa7809b4a4, type: 3}
+  - {fileID: 21300000, guid: 18f46534187905d4fb973dc11677762c, type: 3}
+  - {fileID: 21300000, guid: b1d728ad1c856f946b602eba10cee9c9, type: 3}
   necklaceSprites:
-  - {fileID: 21300000, guid: e4801df6d840af1479a3ff2c03e21535, type: 3}
-  - {fileID: 21300000, guid: 7a0a045d54f5f5744a0e7f1299822cde, type: 3}
-  - {fileID: 21300000, guid: b955da28ca25156479136624e60709c3, type: 3}
-  - {fileID: 21300000, guid: 730c14159599bc740bf2c46478eba949, type: 3}
-  - {fileID: 21300000, guid: 4e0ff147f75314f47bb566c50b4f162a, type: 3}
-  - {fileID: 21300000, guid: 728d0ada6a9a0594abda482595e32f8f, type: 3}
-  - {fileID: 21300000, guid: c581c5bca26ac6143b1926fd354572f1, type: 3}
-  - {fileID: 21300000, guid: d883c77568eee994199cbca612d607a7, type: 3}
-  - {fileID: 21300000, guid: 0a49418a2015ec94faa42374619410a5, type: 3}
-  - {fileID: 21300000, guid: 6e11813141bf7be4c829307d168a4807, type: 3}
+  - {fileID: 21300000, guid: 793e5b02d0d3da64589c95b17de54762, type: 3}
+  - {fileID: 21300000, guid: 6448b243823370943a0b93e8e6301962, type: 3}
+  - {fileID: 21300000, guid: 9fb1cd63b821c6a41a3cf677ac4e6a6e, type: 3}
+  - {fileID: 21300000, guid: 94459ec81a231564a892a73868ca2976, type: 3}
+  - {fileID: 21300000, guid: 763b6ac4502b9ae47a1906805cba95aa, type: 3}
+  - {fileID: 21300000, guid: c6d7b51cc4c247f4283200fd3aa0f754, type: 3}
+  - {fileID: 21300000, guid: 948ac775bc752824fb8e9060bb8ada8d, type: 3}
+  - {fileID: 21300000, guid: 853fde615e5d7024a81c6b1ad322c463, type: 3}
+  - {fileID: 21300000, guid: 3d7673de0109b9e43b3846397ccc26ea, type: 3}
+  - {fileID: 21300000, guid: e99f25f2bd584584e9c454e657119424, type: 3}
   EyeBrowSprites:
-  - {fileID: 21300000, guid: 6cf44dfac49e42d4ba681e313208ad75, type: 3}
-  - {fileID: 21300000, guid: 91cdbc8fb0140bc48976d11b290c82ec, type: 3}
-  - {fileID: 21300000, guid: cb87adb966ddcb04fa1516ff5afbc5ef, type: 3}
-  - {fileID: 21300000, guid: 7049a4f354fd75b4988d9f257d202442, type: 3}
-  - {fileID: 21300000, guid: 2f22f0609cd3e894c86a5fa24c43e058, type: 3}
-  - {fileID: 21300000, guid: 045b61a296f8b4b4daabb1cb8050295a, type: 3}
-  - {fileID: 21300000, guid: 06e8c360a64dd334596b16a71644835b, type: 3}
-  - {fileID: 21300000, guid: b1cc74da38f3c314f98a527fdf03b5f6, type: 3}
-  - {fileID: 21300000, guid: 398c8d30f88a09d43bb5c9f7117950ba, type: 3}
-  - {fileID: 21300000, guid: f7b78235078b540438a81242730b6b61, type: 3}
+  - {fileID: 21300000, guid: 20b976a741b24384980826e3d248a066, type: 3}
+  - {fileID: 21300000, guid: ac543a5023d25794ba7430474e2d65a2, type: 3}
+  - {fileID: 21300000, guid: 907963091b3053b428f63424c05eb386, type: 3}
+  - {fileID: 21300000, guid: e48ec053dad51cd47a53799c0be248cc, type: 3}
+  - {fileID: 21300000, guid: 096c3ce22b7b11c448b6f7b9cf6dc932, type: 3}
+  - {fileID: 21300000, guid: cb02559001d663241b688de56c17ea6d, type: 3}
+  - {fileID: 21300000, guid: 5f56666a81972304ba02d412903c03ee, type: 3}
+  - {fileID: 21300000, guid: 881eeed56cf3c8144a22e7a016580d1d, type: 3}
+  - {fileID: 21300000, guid: 7e2e67bb404b309459e1d5e0fde5ab88, type: 3}
+  - {fileID: 21300000, guid: 76bd5be22b273cc419109cad0317d8bd, type: 3}
   backgroundSprites:
-  - {fileID: 21300000, guid: 6d52dfeae0fe8f549b9295488efbe4b1, type: 3}
-  - {fileID: 21300000, guid: 41018248bb61bd341a497b3f72b11223, type: 3}
-  - {fileID: 21300000, guid: bbbf1a4d8d46a8441b80493e3dfff760, type: 3}
-  - {fileID: 21300000, guid: f0ff70cc7fd783e43976ec9a963b3f3a, type: 3}
-  - {fileID: 21300000, guid: 2c4e692ebe4384f4aa66768fdd77d2e9, type: 3}
+  - {fileID: 21300000, guid: a4256e6da60ba2b4da00b5b565b0c9d4, type: 3}
+  - {fileID: 21300000, guid: bc2ad866a76459d43bc4f89f7cf22656, type: 3}
+  - {fileID: 21300000, guid: fc62ccbb848e7e14487c43629ca81c3c, type: 3}
+  - {fileID: 21300000, guid: e0236c9b7022b304d840e173dfdbd7cb, type: 3}
+  - {fileID: 21300000, guid: c1da51deeca2f5c49b8864a6e052967f, type: 3}
   BlushSprites:
-  - {fileID: 21300000, guid: 0dbd0bc3f43b62e4b81f35b15796c588, type: 3}
-  - {fileID: 21300000, guid: 5d7b5c990829ac74780b3a3c77d2e620, type: 3}
-  - {fileID: 21300000, guid: c16f23dfc20996941b550947699f56cf, type: 3}
-  - {fileID: 21300000, guid: 07b1b0eceafc3e54b8d827eeaca47a12, type: 3}
-  - {fileID: 21300000, guid: 35d4773c78796874f88e0a0ccba1a0d5, type: 3}
-  - {fileID: 21300000, guid: 87e4a88719811bf4ea52362eb07937f9, type: 3}
-  - {fileID: 21300000, guid: b484acb19b13c8b4b89bec5135cb77a0, type: 3}
-  - {fileID: 21300000, guid: 7bf252def32b07d4fa1ef56ba1dbf126, type: 3}
-  - {fileID: 21300000, guid: d3ee224c7efc28e42a9d3f5383f78df9, type: 3}
-  - {fileID: 21300000, guid: b705a5653117884448d91df604c3ca65, type: 3}
+  - {fileID: 21300000, guid: 7db484307989358479bb51f929978ec9, type: 3}
+  - {fileID: 21300000, guid: 82f6af4c4520b1c49af7b0b872442310, type: 3}
+  - {fileID: 21300000, guid: 7ec1be70234e5604f8b95a3ec618f7c7, type: 3}
+  - {fileID: 21300000, guid: 2b552573c6a197c40bfb647f60856850, type: 3}
+  - {fileID: 21300000, guid: 99b09397bddca104bb84d1e88ce6abf3, type: 3}
+  - {fileID: 21300000, guid: 4ee53bf892c26fd488d0d1a8ed267448, type: 3}
+  - {fileID: 21300000, guid: b3979e3748fa3204589cacbed85bcc44, type: 3}
+  - {fileID: 21300000, guid: bd153f341aeb6a245b948f896e516e40, type: 3}
+  - {fileID: 21300000, guid: 2bcd3a943e97c454395cf60a90a5a11a, type: 3}
+  - {fileID: 21300000, guid: 74c6dcf8ff34ab24ca4ce1fb765902ae, type: 3}
   CatagoryImage:
   - {fileID: 1629141188}
   - {fileID: 1078193789}
@@ -59511,8 +59511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.8, y: -587.4}
-  m_SizeDelta: {x: 367, y: 210}
+  m_AnchoredPosition: {x: -78.8, y: -588.6}
+  m_SizeDelta: {x: 374, y: 203}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155623929
 MonoBehaviour:
@@ -59534,7 +59534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55ec9e16cd43dfb4cbeaac00133a886b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74fdb18b9eeb6774380b1a06341b222a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -61895,8 +61895,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: CoinUnlock
         m_Mode: 1
         m_Arguments:
@@ -64655,8 +64655,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -69841,8 +69841,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.2, y: 564.2}
-  m_SizeDelta: {x: 129, y: 53}
+  m_AnchoredPosition: {x: -19.2, y: 565}
+  m_SizeDelta: {x: 129, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344448821
 MonoBehaviour:
@@ -69864,7 +69864,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 592d654343ec30646b4b2f0637de28cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5fcbcc520ed8b054a82abd047a664413, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -71124,8 +71124,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.1, y: 624.1}
-  m_SizeDelta: {x: 167, y: 121}
+  m_AnchoredPosition: {x: -19.1, y: 684.7}
+  m_SizeDelta: {x: 179, y: 217}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1372509150
 CanvasRenderer:
@@ -71155,7 +71155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 859349e6b19c5794e95b9419adcc9a81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d46c0074321752c4084ad8c2bfd73f31, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -72793,8 +72793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: NeedMoreCoins
         m_Mode: 1
         m_Arguments:
@@ -76346,8 +76346,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -84577,8 +84577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -92222,7 +92222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155.54, y: -21.26}
+  m_AnchoredPosition: {x: -154.3701, y: -22.45}
   m_SizeDelta: {x: 14, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748170939
@@ -92375,8 +92375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.5, y: 501.4}
-  m_SizeDelta: {x: 62, y: 27}
+  m_AnchoredPosition: {x: -19.5, y: 497}
+  m_SizeDelta: {x: 54, y: 33}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1751464290
 CanvasRenderer:
@@ -92406,7 +92406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f14a8aacb9a2c5e4e8592279fe8a82e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58a31e0c87f7db741b3e7fda3971791e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93083,8 +93083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: 576.2}
-  m_SizeDelta: {x: 125, y: 29}
+  m_AnchoredPosition: {x: -19.2, y: 582.3}
+  m_SizeDelta: {x: 121, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760907183
 MonoBehaviour:
@@ -93106,7 +93106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cf44dfac49e42d4ba681e313208ad75, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20b976a741b24384980826e3d248a066, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93540,8 +93540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.7, y: 169.4}
-  m_SizeDelta: {x: 59, y: 64}
+  m_AnchoredPosition: {x: 118.1, y: 173}
+  m_SizeDelta: {x: 72, y: 72}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772959579
 MonoBehaviour:
@@ -93563,7 +93563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8200b010dc425c46b3ebee0caadfbe1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 50aef02d2529d6b478481240aecd14de, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -95151,8 +95151,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -97394,8 +97394,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589980}
+        m_TargetAssemblyTypeName: IndianMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -97442,8 +97442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: 576.2}
-  m_SizeDelta: {x: 125, y: 29}
+  m_AnchoredPosition: {x: -19.2, y: 582.3}
+  m_SizeDelta: {x: 121, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1859163809
 CanvasRenderer:
@@ -97473,7 +97473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9faf0032b7681574e8f2d93c057bcf7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20b976a741b24384980826e3d248a066, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -99584,7 +99584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ae3dfd05af7ace409e94f66be7e4eb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7db484307989358479bb51f929978ec9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -99620,7 +99620,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.8, y: 538.5}
+  m_AnchoredPosition: {x: -20.2, y: 547}
   m_SizeDelta: {x: 150, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1902284186
@@ -102109,8 +102109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.9, y: 385.3}
-  m_SizeDelta: {x: 122, y: 157}
+  m_AnchoredPosition: {x: -16, y: 385.3}
+  m_SizeDelta: {x: 156, y: 154}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934326354
 MonoBehaviour:
@@ -102132,7 +102132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e4801df6d840af1479a3ff2c03e21535, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 793e5b02d0d3da64589c95b17de54762, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103023,8 +103023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.95, y: -56.4}
-  m_SizeDelta: {x: 585, y: 1024}
+  m_AnchoredPosition: {x: -22.27, y: -150.7}
+  m_SizeDelta: {x: 1092, y: 1269}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943833761
 MonoBehaviour:
@@ -103046,7 +103046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59b01b86a0b03454c8fecdac7afee05b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 78cf5b66cf4e2a74bb91ff3af9a829ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103848,7 +103848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957660542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -105867,8 +105867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.9, y: 385.3}
-  m_SizeDelta: {x: 122, y: 157}
+  m_AnchoredPosition: {x: -16, y: 385.3}
+  m_SizeDelta: {x: 156, y: 154}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2005165932
 CanvasRenderer:
@@ -105898,7 +105898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 02f093865a0bcae41b8996c59fa1ff77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 793e5b02d0d3da64589c95b17de54762, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -106481,7 +106481,7 @@ GameObject:
   - component: {fileID: 2026479918}
   - component: {fileID: 2026479917}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106506,8 +106506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.2, y: -191.7}
-  m_SizeDelta: {x: 325, y: 330}
+  m_AnchoredPosition: {x: -203.9, y: -98.3}
+  m_SizeDelta: {x: 325, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2026479917
 MonoBehaviour:
@@ -106529,7 +106529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6f483a0ab5846d48a11b63c8494b621, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8b0c9afd09ed4704fba5520d2d46cd94, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -108940,7 +108940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.8, y: 538.5}
+  m_AnchoredPosition: {x: -20.2, y: 547}
   m_SizeDelta: {x: 150, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076211704
@@ -108963,7 +108963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0dbd0bc3f43b62e4b81f35b15796c588, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7db484307989358479bb51f929978ec9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -109586,7 +109586,7 @@ GameObject:
   - component: {fileID: 2088810926}
   - component: {fileID: 2088810927}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109610,8 +109610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.2, y: -191.7}
-  m_SizeDelta: {x: 325, y: 330}
+  m_AnchoredPosition: {x: -203.9, y: -98.3}
+  m_SizeDelta: {x: 325, y: 333}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2088810926
 CanvasRenderer:
@@ -109641,7 +109641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97c16afdbe1f7964ea705c0a12d41263, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8597d8fc59adcf44282056223eb9ffdf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110001,8 +110001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.2, y: 499.9}
-  m_SizeDelta: {x: 302, y: 458}
+  m_AnchoredPosition: {x: -28.1, y: 472.5}
+  m_SizeDelta: {x: 295, y: 548}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101316824
 MonoBehaviour:
@@ -110024,7 +110024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 488f0d1bcef2c7741b5967a74b645c61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4c55114bc32783b47ba17d85db4d1c16, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110077,7 +110077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155.54, y: -21.26}
+  m_AnchoredPosition: {x: -154.3701, y: -22.45}
   m_SizeDelta: {x: 14, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102844909

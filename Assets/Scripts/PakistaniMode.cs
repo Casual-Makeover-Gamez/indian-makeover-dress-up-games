@@ -6,40 +6,40 @@ using UnityEngine;
 using DG.Tweening;
 
 [System.Serializable]
-public class CasualUiElements
+public class PakistaniUiElements
 {
     [Header("Scrollers")]
     public GameObject aLLScrollers;
-    public GameObject dressScroller, BagScroller, HairBandScroller, hairScrolleer, BangelsScroller, shoeScroller,
+    public GameObject dressScroller, HandItemsScroller, HairBandScroller, hairScrolleer, BangelsScroller, shoeScroller,
                       earRingScroller, EyeShadesScroller, lipstickScroller, necklaceScroller, EyeBrowScroller, BgScroller, 
                       BlushScroller;
     [Header("Images")]
     public Image dressImage;
-    public Image BagImage, HairBandImage, hairImage, BangelsImage, shoesImage, earRingsImage, EyeShadesImage, lipstickImage, neckLaceImage,
+    public Image HandItemsImage, HairBandImage, hairImage, BangelsImage, shoesImage, earRingsImage, EyeShadesImage, lipstickImage, neckLaceImage,
                  EyeBrowImage, BgImage, BlushImage;
     public Image videoSlotItem, coinslotItem;
 }
 [System.Serializable]
-public class CasualOpponent
+public class PakistaniOpponent
 {
     [Header("Images")]
     public Image oppodressImage;
-    public Image oppobangelImage, oppohairImage, oppoeyeShadesImage, oppoBagImage, oppoearRingImage, oppoHairBandImage, opponeckLaceImage, oppoEyeBrowImage, 
+    public Image oppobangelImage, oppohairImage, oppoeyeShadesImage, oppoHandItemsImage, oppoearRingImage, oppoHairBandImage, opponeckLaceImage, oppoEyeBrowImage, 
                  opposhoesImage, oppolipstickImage, oppoBlushImage;
     [Header("Text")]
     public Text playerTotal;
     public Text oppoTotal, videoScore, CoinScore, requirdCoins;
 }
 [System.Serializable]
-public enum CasualSelectedItem
+public enum PakistaniSelectedItem
 {
-     Dress, Hair, EyeShades, EyeBrow, Blush, Lipstick, HairBand, EarRings, NeckLace, Bangels, Bag, Shoes, BackGround
+     Dress, Hair, EyeShades, EyeBrow, Blush, Lipstick, HairBand, EarRings, NeckLace, Bangels, HandItems, Shoes, BackGround
 }
-public class CasualMode : MonoBehaviour
+public class PakistaniMode : MonoBehaviour
 {
-    public CasualSelectedItem selectedItem;
-    public CasualUiElements uIElements;
-    public CasualOpponent oppElements;
+    public PakistaniSelectedItem selectedItem;
+    public PakistaniUiElements uIElements;
+    public PakistaniOpponent oppElements;
     [Header("Panels")]
     public GameObject AdPenl;
     public GameObject topBar;
@@ -75,7 +75,7 @@ public class CasualMode : MonoBehaviour
     public Sprite CatagoryDefaultSprites;
     public Sprite CatagorySelectedSprites;
     public Sprite[] dressSprites;
-    public Sprite[] BagSprites;
+    public Sprite[] HandItemSprites;
     public Sprite[] HairBandSprites;
     public Sprite[] hairSprites;
     public Sprite[] BangelsSprites;
@@ -90,7 +90,7 @@ public class CasualMode : MonoBehaviour
     public Image[] CatagoryImage;
     public Sprite[] botSprites; 
     private List<ItemInfo> dressList = new List<ItemInfo>();
-    private List<ItemInfo> BagList = new List<ItemInfo>();
+    private List<ItemInfo> HandItemList = new List<ItemInfo>();
     private List<ItemInfo> HairBandList = new List<ItemInfo>();
     private List<ItemInfo> hairList = new List<ItemInfo>();
     private List<ItemInfo> BangelsList = new List<ItemInfo>();
@@ -110,9 +110,9 @@ public class CasualMode : MonoBehaviour
     bool IsDressTrue ,IsHairTrue,IsBangleTrue,IsNecklacetrue = false;
     private bool canShowInterstitial;
     private int dressValue, hairValue, bangleValue, HairBandValue, earringValue, BlushValue, eyeshadesValue, lipstickValue, necklaceValue, EyeBrowValue, shoeValue,
-                bgValue, BagValue;
+                bgValue, HandItemValue;
     private int oppodressValue, oppohairValue, oppobangleValue, oppoHairBandValue, oppoearringValue, oppoBlushValue, oppoeyeshadesValue, oppolipstickValue, 
-                opponecklaceValue, oppoEyeBrowValue, opposhoeValue, oppoBagValue;
+                opponecklaceValue, oppoEyeBrowValue, opposhoeValue, oppoHandItemValue;
     private int[] DressScore = { 9100, 9150, 9200, 9250, 9300, 9350, 9400, 9450, 9500, 9550, 9600, 9650, 9700, 9750, 9900 };
     private int[] HairScore = { 8200, 8250, 8300, 8350, 8400, 8500, 8600, 8650, 8700, 8750, 8800, 8850, 8900, 8950, 9000 };
     private int[] BangelsScore = { 5150, 5200, 5250, 5300, 5350, 5400, 5450, 5600, 5650, 5700, 5750, 5800, 5850, 5900, 8950 };
@@ -124,7 +124,7 @@ public class CasualMode : MonoBehaviour
     private int[] NeckLaceScore = { 7000, 7100, 7200, 7300, 7400, 7500, 7600, 7700, 7750, 7800, 7850, 7900, 7940, 7980, 8000 };
     private int[] EyeBrowScore = { 4500, 4550, 4600, 4650, 4700, 4750, 4800, 4850, 4900, 4920, 4940, 4960, 4980, 5000, 5050 };
     private int[] ShoesScore = { 2000, 2500, 3000, 3500, 4000, 4500, 5000, 5500, 6000, 6500, 6800, 7000, 7200, 7400, 7600 };
-    private int[] BagScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
+    private int[] HandItemScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
     private int[] BGScore = { 3500, 3550, 3600, 3620, 3640, 3680, 3700, 3750, 3800, 3840, 3880, 3920, 3940, 3960, 3980 };
 
     // private int selectedIndex;
@@ -145,16 +145,16 @@ public class CasualMode : MonoBehaviour
             GameManager.Instance.Initialized = true;
             Rai_SaveLoad.LoadProgress();
         }
-        selectedItem = CasualSelectedItem.Dress;
+        selectedItem = PakistaniSelectedItem.Dress;
         uIElements.dressScroller.SetActive(true);
         TotalCoins.text = SaveData.Instance.Coins.ToString();
         SetInitialValues();
         GetItemsInfo();
         StartCoroutine(AdDelay(45));
         playerIcon.sprite = botSprites[SaveData.Instance.PlayerSelectedAvatar];
-        if(SaveData.Instance.opponentSelectedAvatar != null)
+        if (SaveData.Instance.opponentSelectedAvatar != null)
         {
-            BotIcon.sprite = SaveData.Instance.opponentSelectedAvatar;
+           // BotIcon.sprite = SaveData.Instance.opponentSelectedAvatar;
         }
         CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
     }
@@ -202,21 +202,21 @@ public class CasualMode : MonoBehaviour
                 dressList.Add(dressinfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.dressLocked, dressList);
+        SetupItemData(SaveData.Instance.indianProps.dressLocked, dressList);
         SetItemIcon(dressList, dressSprites);
         #endregion      
   
-        #region Initialing Bag
-        if (uIElements.BagScroller)
+        #region Initialing HandItems
+        if (uIElements.HandItemsScroller)
         {
-            var topinfo = uIElements.BagScroller.GetComponentsInChildren<ItemInfo>();
+            var topinfo = uIElements.HandItemsScroller.GetComponentsInChildren<ItemInfo>();
             for (int i = 0; i < topinfo.Length; i++)
             {
-                BagList.Add(topinfo[i]);
+                HandItemList.Add(topinfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.bagLocked, BagList);
-        SetItemIcon(BagList, BagSprites);
+        SetupItemData(SaveData.Instance.indianProps.bagLocked, HandItemList);
+        SetItemIcon(HandItemList, HandItemSprites);
         #endregion      
         
         #region Initialing HairBand
@@ -229,7 +229,7 @@ public class CasualMode : MonoBehaviour
                 HairBandList.Add(shortsinfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.hairbandLocked, HairBandList);
+        SetupItemData(SaveData.Instance.indianProps.hairbandLocked, HairBandList);
         SetItemIcon(HairBandList, HairBandSprites);
         #endregion
 
@@ -242,7 +242,7 @@ public class CasualMode : MonoBehaviour
                 hairList.Add(hairInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.hairLocked, hairList);
+        SetupItemData(SaveData.Instance.indianProps.hairLocked, hairList);
         SetItemIcon(hairList, hairSprites);
         #endregion
    
@@ -255,7 +255,7 @@ public class CasualMode : MonoBehaviour
                 BangelsList.Add(handThingsInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.bangelsLocked, BangelsList);
+        SetupItemData(SaveData.Instance.indianProps.bangelsLocked, BangelsList);
         SetItemIcon(BangelsList, BangelsSprites);
         #endregion
 
@@ -268,7 +268,7 @@ public class CasualMode : MonoBehaviour
                 ShoesList.Add(ShoesInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.shoesLocked, ShoesList);
+        SetupItemData(SaveData.Instance.indianProps.shoesLocked, ShoesList);
         SetItemIcon(ShoesList, ShoesSprites);
         #endregion
 
@@ -281,7 +281,7 @@ public class CasualMode : MonoBehaviour
                 earRingsList.Add(earRingInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.earRingLocked, earRingsList);
+        SetupItemData(SaveData.Instance.indianProps.earRingLocked, earRingsList);
         SetItemIcon(earRingsList, earRingsSprites);
         #endregion
 
@@ -294,7 +294,7 @@ public class CasualMode : MonoBehaviour
                 EyeShadesList.Add(eyesBrowInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.eyeShadesLocked, EyeShadesList);
+        SetupItemData(SaveData.Instance.indianProps.eyeShadesLocked, EyeShadesList);
         SetItemIcon(EyeShadesList, EyeShadesSprites);
         #endregion
 
@@ -307,7 +307,7 @@ public class CasualMode : MonoBehaviour
                 lipstickList.Add(lipsTickInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.lipsTickLocked, lipstickList);
+        SetupItemData(SaveData.Instance.indianProps.lipsTickLocked, lipstickList);
         SetItemIcon(lipstickList, lipsTickSprites);
         #endregion
      
@@ -320,7 +320,7 @@ public class CasualMode : MonoBehaviour
                 neckLaceList.Add(neckLaceInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.necklaceLocked, neckLaceList);
+        SetupItemData(SaveData.Instance.indianProps.necklaceLocked, neckLaceList);
         SetItemIcon(neckLaceList, necklaceSprites);
         #endregion 
 
@@ -333,7 +333,7 @@ public class CasualMode : MonoBehaviour
                 EyeBrowList.Add(noseRingInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.noseRingLocked, EyeBrowList);
+        SetupItemData(SaveData.Instance.indianProps.noseRingLocked, EyeBrowList);
         SetItemIcon(EyeBrowList, EyeBrowSprites);
         #endregion
 
@@ -346,11 +346,10 @@ public class CasualMode : MonoBehaviour
                 BlushList.Add(MehndiInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.BlushLocked, BlushList);
+        SetupItemData(SaveData.Instance.indianProps.BlushLocked, BlushList);
         SetItemIcon(BlushList, BlushSprites);
         #endregion
   
-
         #region Initialing BG
         if (uIElements.BgScroller)
         {
@@ -360,7 +359,7 @@ public class CasualMode : MonoBehaviour
                 backgroundList.Add(BGInfo[i]);
             }
         }
-        SetupItemData(SaveData.Instance.casualProps.BGLocked, backgroundList);
+        SetupItemData(SaveData.Instance.indianProps.BGLocked, backgroundList);
         SetItemIcon(backgroundList, backgroundSprites);
         #endregion
 
@@ -434,7 +433,7 @@ public class CasualMode : MonoBehaviour
             CatagoryImage[i].sprite = CatagoryDefaultSprites;
         }
         uIElements.dressScroller.SetActive(false);
-        uIElements.BagScroller.SetActive(false);
+        uIElements.HandItemsScroller.SetActive(false);
         uIElements.HairBandScroller.SetActive(false);
         uIElements.hairScrolleer.SetActive(false);
         uIElements.BangelsScroller.SetActive(false);
@@ -453,85 +452,85 @@ public class CasualMode : MonoBehaviour
         DisableScrollers();
         if (CategorySFX) CategorySFX.Play();
         CatagoryImage[index].sprite = CatagorySelectedSprites;
-        if (index == (int)CasualSelectedItem.Dress)
+        if (index == (int)PakistaniSelectedItem.Dress)
         {
-            selectedItem = CasualSelectedItem.Dress;
+            selectedItem = PakistaniSelectedItem.Dress;
             uIElements.dressScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.Hair)
+        else if (index == (int)PakistaniSelectedItem.Hair)
         {
-            selectedItem = CasualSelectedItem.Hair;
+            selectedItem = PakistaniSelectedItem.Hair;
             uIElements.hairScrolleer.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.Bangels)
+        else if (index == (int)PakistaniSelectedItem.Bangels)
         {
-            selectedItem = CasualSelectedItem.Bangels;
+            selectedItem = PakistaniSelectedItem.Bangels;
             uIElements.BangelsScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.HairBand)
+        else if (index == (int)PakistaniSelectedItem.HairBand)
         {
-            selectedItem = CasualSelectedItem.HairBand;
+            selectedItem = PakistaniSelectedItem.HairBand;
             uIElements.HairBandScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.EarRings)
+        else if (index == (int)PakistaniSelectedItem.EarRings)
         {
-            selectedItem = CasualSelectedItem.EarRings;
+            selectedItem = PakistaniSelectedItem.EarRings;
             uIElements.earRingScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.Blush)
+        else if (index == (int)PakistaniSelectedItem.Blush)
         {
-            selectedItem = CasualSelectedItem.Blush;
+            selectedItem = PakistaniSelectedItem.Blush;
             uIElements.BlushScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.Bag)
+        else if (index == (int)PakistaniSelectedItem.HandItems)
         {
-            selectedItem = CasualSelectedItem.Bag;
-            uIElements.BagScroller.SetActive(true);
+            selectedItem = PakistaniSelectedItem.HandItems;
+            uIElements.HandItemsScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
 
         }
-        else if (index == (int)CasualSelectedItem.EyeShades)
+        else if (index == (int)PakistaniSelectedItem.EyeShades)
         {
-            selectedItem = CasualSelectedItem.EyeShades;
+            selectedItem = PakistaniSelectedItem.EyeShades;
             uIElements.EyeShadesScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.Lipstick)
+        else if (index == (int)PakistaniSelectedItem.Lipstick)
         {
-            selectedItem = CasualSelectedItem.Lipstick;
+            selectedItem = PakistaniSelectedItem.Lipstick;
             uIElements.lipstickScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)CasualSelectedItem.NeckLace)
+        else if (index == (int)PakistaniSelectedItem.NeckLace)
         {
-            selectedItem = CasualSelectedItem.NeckLace;
+            selectedItem = PakistaniSelectedItem.NeckLace;
             uIElements.necklaceScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)CasualSelectedItem.EyeBrow)
+        else if (index == (int)PakistaniSelectedItem.EyeBrow)
         {
-            selectedItem = CasualSelectedItem.EyeBrow;
+            selectedItem = PakistaniSelectedItem.EyeBrow;
             uIElements.EyeBrowScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)CasualSelectedItem.Shoes)
+        else if (index == (int)PakistaniSelectedItem.Shoes)
         {
-            selectedItem = CasualSelectedItem.Shoes;
+            selectedItem = PakistaniSelectedItem.Shoes;
             uIElements.shoeScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)CasualSelectedItem.BackGround)
+        else if (index == (int)PakistaniSelectedItem.BackGround)
         {
-            selectedItem = CasualSelectedItem.BackGround;
+            selectedItem = PakistaniSelectedItem.BackGround;
             uIElements.BgScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
 
@@ -543,55 +542,55 @@ public class CasualMode : MonoBehaviour
     #region GetItemsInfo
     private void GetItemsInfo()
     {
-        if (selectedItem == CasualSelectedItem.Dress)
+        if (selectedItem == PakistaniSelectedItem.Dress)
         {
             SetItemsInfo(dressList, DressScore);
         }
-        else if (selectedItem == CasualSelectedItem.Bag)
+        else if (selectedItem == PakistaniSelectedItem.HandItems)
         {
-            SetItemsInfo(BagList, BagScore);
+            SetItemsInfo(HandItemList, HandItemScore);
         }
-        else if (selectedItem == CasualSelectedItem.HairBand)
+        else if (selectedItem == PakistaniSelectedItem.HairBand)
         {
             SetItemsInfo(HairBandList, HairBandScore);
         }
-        else if (selectedItem == CasualSelectedItem.Hair)
+        else if (selectedItem == PakistaniSelectedItem.Hair)
         {
             SetItemsInfo(hairList, HairScore);
         }
-        else if (selectedItem == CasualSelectedItem.Bangels)
+        else if (selectedItem == PakistaniSelectedItem.Bangels)
         {
             SetItemsInfo(BangelsList, BangelsScore);
         }
-        else if (selectedItem == CasualSelectedItem.Shoes)
+        else if (selectedItem == PakistaniSelectedItem.Shoes)
         {
             SetItemsInfo(ShoesList, ShoesScore);
         }
-        else if (selectedItem == CasualSelectedItem.EarRings)
+        else if (selectedItem == PakistaniSelectedItem.EarRings)
         {
             SetItemsInfo(earRingsList, EarRingsScore);
         }
-        else if (selectedItem == CasualSelectedItem.EyeShades)
+        else if (selectedItem == PakistaniSelectedItem.EyeShades)
         {
             SetItemsInfo(EyeShadesList, EyeShadesScore);
         }     
-        else if (selectedItem == CasualSelectedItem.Lipstick)
+        else if (selectedItem == PakistaniSelectedItem.Lipstick)
         {
             SetItemsInfo(lipstickList, LipstickScore);
         }
-        else if (selectedItem == CasualSelectedItem.NeckLace)
+        else if (selectedItem == PakistaniSelectedItem.NeckLace)
         {
             SetItemsInfo(neckLaceList, NeckLaceScore);
         }
-        else if (selectedItem == CasualSelectedItem.BackGround)
+        else if (selectedItem == PakistaniSelectedItem.BackGround)
         {
             SetItemsInfo(backgroundList, BGScore);
         }
-        else if (selectedItem == CasualSelectedItem.EyeBrow)
+        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
         {
             SetItemsInfo(EyeBrowList, EyeBrowScore);
         }
-        else if (selectedItem == CasualSelectedItem.Blush)
+        else if (selectedItem == PakistaniSelectedItem.Blush)
         {
             SetItemsInfo(BlushList, BlushScore);
         }
@@ -653,55 +652,55 @@ public class CasualMode : MonoBehaviour
     #region SelectItem
     public void SelectItem(int index)
     {
-        if (selectedItem == CasualSelectedItem.Dress)
+        if (selectedItem == PakistaniSelectedItem.Dress)
         {
             CheckSelectedItem(dressList, dressSprites, uIElements.dressImage);
         }
-        else if (selectedItem == CasualSelectedItem.Bag)
+        else if (selectedItem == PakistaniSelectedItem.HandItems)
         {
-            CheckSelectedItem(BagList, BagSprites, uIElements.BagImage);
+            CheckSelectedItem(HandItemList, HandItemSprites, uIElements.HandItemsImage);
         }
-        else if (selectedItem == CasualSelectedItem.HairBand)
+        else if (selectedItem == PakistaniSelectedItem.HairBand)
         {
             CheckSelectedItem(HairBandList, HairBandSprites, uIElements.HairBandImage);
         }
-        else if (selectedItem == CasualSelectedItem.Hair)
+        else if (selectedItem == PakistaniSelectedItem.Hair)
         {
             CheckSelectedItem(hairList, hairSprites, uIElements.hairImage);
         }
-        else if (selectedItem == CasualSelectedItem.Bangels)
+        else if (selectedItem == PakistaniSelectedItem.Bangels)
         {
             CheckSelectedItem(BangelsList, BangelsSprites, uIElements.BangelsImage);
         }
-        else if (selectedItem == CasualSelectedItem.Shoes)
+        else if (selectedItem == PakistaniSelectedItem.Shoes)
         {
             CheckSelectedItem(ShoesList, ShoesSprites, uIElements.shoesImage);
         }
-        else if (selectedItem == CasualSelectedItem.EarRings)
+        else if (selectedItem == PakistaniSelectedItem.EarRings)
         {
             CheckSelectedItem(earRingsList, earRingsSprites, uIElements.earRingsImage);
         }
-        else if (selectedItem == CasualSelectedItem.EyeShades)
+        else if (selectedItem == PakistaniSelectedItem.EyeShades)
         {
             CheckSelectedItem(EyeShadesList, EyeShadesSprites, uIElements.EyeShadesImage);
         }
-        else if (selectedItem == CasualSelectedItem.Lipstick)
+        else if (selectedItem == PakistaniSelectedItem.Lipstick)
         {
             CheckSelectedItem(lipstickList, lipsTickSprites, uIElements.lipstickImage);
         }
-        else if (selectedItem == CasualSelectedItem.NeckLace)
+        else if (selectedItem == PakistaniSelectedItem.NeckLace)
         {
             CheckSelectedItem(neckLaceList, necklaceSprites, uIElements.neckLaceImage);
         }
-        else if (selectedItem == CasualSelectedItem.EyeBrow)
+        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
         {
             CheckSelectedItem(EyeBrowList, EyeBrowSprites, uIElements.EyeBrowImage);
         }
-        else if (selectedItem == CasualSelectedItem.BackGround)
+        else if (selectedItem == PakistaniSelectedItem.BackGround)
         {
             CheckSelectedItem(backgroundList, backgroundSprites, uIElements.BgImage);
         }
-        else if (selectedItem == CasualSelectedItem.Blush)
+        else if (selectedItem == PakistaniSelectedItem.Blush)
         {
             CheckSelectedItem(BlushList, BlushSprites, uIElements.BlushImage);
         }
@@ -741,60 +740,60 @@ public class CasualMode : MonoBehaviour
                     {
                         if (itemImage)
                         {
-                            if (selectedItem == CasualSelectedItem.Dress)
+                            if (selectedItem == PakistaniSelectedItem.Dress)
                             {
                                 IsDressTrue = true;
                                 dressValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.Hair)
+                            else if (selectedItem == PakistaniSelectedItem.Hair)
                             {
                                 hairValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsHairTrue = true;
                             }
-                            else if (selectedItem == CasualSelectedItem.Bangels)
+                            else if (selectedItem == PakistaniSelectedItem.Bangels)
                             {
                                 bangleValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsBangleTrue = true;
                             }
-                            else if (selectedItem == CasualSelectedItem.NeckLace)
+                            else if (selectedItem == PakistaniSelectedItem.NeckLace)
                             {
                                 necklaceValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsNecklacetrue = true;
                             }
-                            else if (selectedItem == CasualSelectedItem.HairBand)
+                            else if (selectedItem == PakistaniSelectedItem.HairBand)
                             {
                                 BlushValue = 0;
                                 HairBandValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.EarRings)
+                            else if (selectedItem == PakistaniSelectedItem.EarRings)
                             {
                                 earringValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.Bag)
+                            else if (selectedItem == PakistaniSelectedItem.HandItems)
                             {
-                                BagValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
+                                HandItemValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.EyeShades)
+                            else if (selectedItem == PakistaniSelectedItem.EyeShades)
                             {
                                 eyeshadesValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.Lipstick)
+                            else if (selectedItem == PakistaniSelectedItem.Lipstick)
                             {
                                 lipstickValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.EyeBrow)
+                            else if (selectedItem == PakistaniSelectedItem.EyeBrow)
                             {
                                 EyeBrowValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.Shoes)
+                            else if (selectedItem == PakistaniSelectedItem.Shoes)
                             {
                                 shoeValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.BackGround)
+                            else if (selectedItem == PakistaniSelectedItem.BackGround)
                             {
                                 bgValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == CasualSelectedItem.Blush)
+                            else if (selectedItem == PakistaniSelectedItem.Blush)
                             {
                                 HairBandValue = 0;
                                 BlushValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
@@ -844,7 +843,7 @@ public class CasualMode : MonoBehaviour
         totalScore.transform.GetChild(0).GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(0.5f);
         totalScore.text = (dressValue + hairValue + bangleValue + HairBandValue + earringValue + BlushValue + eyeshadesValue + lipstickValue + necklaceValue +
-                            EyeBrowValue + shoeValue + bgValue + BagValue ).ToString();
+                            EyeBrowValue + shoeValue + bgValue + HandItemValue ).ToString();
     }
     #region Btnfunctions
     public void Play(string str)
@@ -921,57 +920,57 @@ public class CasualMode : MonoBehaviour
     #region UnlockSingleItem
     public void UnlockSingleItem()
     {
-        if (selectedItem == CasualSelectedItem.Dress)
+        if (selectedItem == PakistaniSelectedItem.Dress)
         {
-            SaveData.Instance.casualProps.dressLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.dressLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Bag)
+        else if (selectedItem == PakistaniSelectedItem.HandItems)
         {
-            SaveData.Instance.casualProps.bagLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.bagLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.HairBand)
+        else if (selectedItem == PakistaniSelectedItem.HairBand)
         {
-            SaveData.Instance.casualProps.hairbandLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.hairbandLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Hair)
+        else if (selectedItem == PakistaniSelectedItem.Hair)
         {
-            SaveData.Instance.casualProps.hairLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.hairLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Bangels)
+        else if (selectedItem == PakistaniSelectedItem.Bangels)
         {
-            SaveData.Instance.casualProps.bangelsLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.bangelsLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Shoes)
+        else if (selectedItem == PakistaniSelectedItem.Shoes)
         {
-            SaveData.Instance.casualProps.shoesLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.shoesLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.EarRings)
+        else if (selectedItem == PakistaniSelectedItem.EarRings)
         {
-            SaveData.Instance.casualProps.earRingLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.earRingLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.EyeShades)
+        else if (selectedItem == PakistaniSelectedItem.EyeShades)
         {
-            SaveData.Instance.casualProps.eyeShadesLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.eyeShadesLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Lipstick)
+        else if (selectedItem == PakistaniSelectedItem.Lipstick)
         {
-            SaveData.Instance.casualProps.lipsTickLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.lipsTickLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.NeckLace)
+        else if (selectedItem == PakistaniSelectedItem.NeckLace)
         {
-            SaveData.Instance.casualProps.necklaceLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.necklaceLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.EyeBrow)
+        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
         {
-            SaveData.Instance.casualProps.noseRingLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.noseRingLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.BackGround)
+        else if (selectedItem == PakistaniSelectedItem.BackGround)
         {
-            SaveData.Instance.casualProps.BGLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.BGLocked[selectedIndex] = false;
         }
-        else if (selectedItem == CasualSelectedItem.Blush)
+        else if (selectedItem == PakistaniSelectedItem.Blush)
         {
-            SaveData.Instance.casualProps.BlushLocked[selectedIndex] = false;
+            SaveData.Instance.indianProps.BlushLocked[selectedIndex] = false;
         }
         Rai_SaveLoad.SaveProgress();
     }
@@ -1035,55 +1034,55 @@ public class CasualMode : MonoBehaviour
     #region CoinUnlocks
     public void CoinUnlock()
     {
-        if (selectedItem == CasualSelectedItem.Dress)
+        if (selectedItem == PakistaniSelectedItem.Dress)
         {
             CheckCoinUnlock(dressList);
         }
-        else if (selectedItem == CasualSelectedItem.Bag)
+        else if (selectedItem == PakistaniSelectedItem.HandItems)
         {
-            CheckCoinUnlock(BagList);
+            CheckCoinUnlock(HandItemList);
         }
-        else if (selectedItem == CasualSelectedItem.HairBand)
+        else if (selectedItem == PakistaniSelectedItem.HairBand)
         {
             CheckCoinUnlock(HairBandList);
         }
-        else if (selectedItem == CasualSelectedItem.Hair)
+        else if (selectedItem == PakistaniSelectedItem.Hair)
         {
             CheckCoinUnlock(hairList);
         }
-        else if (selectedItem == CasualSelectedItem.Bangels)
+        else if (selectedItem == PakistaniSelectedItem.Bangels)
         {
             CheckCoinUnlock(BangelsList);
         }
-        else if (selectedItem == CasualSelectedItem.Shoes)
+        else if (selectedItem == PakistaniSelectedItem.Shoes)
         {
             CheckCoinUnlock(ShoesList);
         }
-        else if (selectedItem == CasualSelectedItem.EarRings)
+        else if (selectedItem == PakistaniSelectedItem.EarRings)
         {
             CheckCoinUnlock(earRingsList);
         }
-        else if (selectedItem == CasualSelectedItem.EyeShades)
+        else if (selectedItem == PakistaniSelectedItem.EyeShades)
         {
             CheckCoinUnlock(EyeShadesList);
         }
-        else if (selectedItem == CasualSelectedItem.Lipstick)
+        else if (selectedItem == PakistaniSelectedItem.Lipstick)
         {
             CheckCoinUnlock(lipstickList);
         }
-        else if (selectedItem == CasualSelectedItem.NeckLace)
+        else if (selectedItem == PakistaniSelectedItem.NeckLace)
         {
             CheckCoinUnlock(neckLaceList);
         }
-        else if (selectedItem == CasualSelectedItem.EyeBrow)
+        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
         {
             CheckCoinUnlock(EyeBrowList);
         }
-        else if (selectedItem == CasualSelectedItem.BackGround)
+        else if (selectedItem == PakistaniSelectedItem.BackGround)
         {
             CheckCoinUnlock(backgroundList);
         }
-        else if (selectedItem == CasualSelectedItem.Blush)
+        else if (selectedItem == PakistaniSelectedItem.Blush)
         {
             CheckCoinUnlock(BlushList);
         }
@@ -1285,14 +1284,14 @@ public class CasualMode : MonoBehaviour
                 opposhoeValue = int.Parse(ShoesList[randomIndex].scoreText.text);
             }
         }
-        if (BagValue > 1)
+        if (HandItemValue > 1)
         {
-            randomIndex = Random.Range(0, BagList.Count);
-            if (BagList[randomIndex] && oppElements.oppoBagImage)
+            randomIndex = Random.Range(0, HandItemList.Count);
+            if (HandItemList[randomIndex] && oppElements.oppoHandItemsImage)
             {
-                oppElements.oppoBagImage.gameObject.SetActive(true);
-                oppElements.oppoBagImage.sprite = BagSprites[randomIndex];
-                oppoBagValue = int.Parse(BagList[randomIndex].scoreText.text);
+                oppElements.oppoHandItemsImage.gameObject.SetActive(true);
+                oppElements.oppoHandItemsImage.sprite = HandItemSprites[randomIndex];
+                oppoHandItemValue = int.Parse(HandItemList[randomIndex].scoreText.text);
             }
         }
     }
@@ -1353,22 +1352,22 @@ public class CasualMode : MonoBehaviour
         oppElements.oppoTotal.text = opTotal.ToString();
         yield return new WaitForSeconds(0.5f);
         if (HairBandValue > 1) StartCoroutine(scoreImage(uIElements.HairBandImage));
-        if (BagValue > 1) StartCoroutine(scoreImage(uIElements.BagImage));
+        if (HandItemValue > 1) StartCoroutine(scoreImage(uIElements.HandItemsImage));
         if (bangleValue > 1) StartCoroutine(scoreImage(uIElements.BangelsImage));
         if (earringValue > 1) StartCoroutine(scoreImage(uIElements.earRingsImage));
         if (necklaceValue > 1) StartCoroutine(scoreImage(uIElements.neckLaceImage));
         yield return new WaitForSeconds(0.5f);
-        playerRank = bangleValue + earringValue + necklaceValue + BagValue + HairBandValue ;
+        playerRank = bangleValue + earringValue + necklaceValue + HandItemValue + HairBandValue ;
         playerTotal += playerRank;
         oppElements.playerTotal.text = playerTotal.ToString();
         yield return new WaitForSeconds(0.5f);
-        if (oppoBagValue > 1) StartCoroutine(scoreImage(oppElements.oppoBagImage));
+        if (oppoHandItemValue > 1) StartCoroutine(scoreImage(oppElements.oppoHandItemsImage));
         if (oppoHairBandValue > 1) StartCoroutine(scoreImage(oppElements.oppoHairBandImage));
         if (oppobangleValue > 1) StartCoroutine(scoreImage(oppElements.oppobangelImage));
         if (oppoearringValue > 1) StartCoroutine(scoreImage(oppElements.oppoearRingImage));
         if (opponecklaceValue > 1) StartCoroutine(scoreImage(oppElements.opponeckLaceImage));
         yield return new WaitForSeconds(0.5f);
-        oppoRank = oppobangleValue + oppoearringValue + opponecklaceValue + oppoHairBandValue + oppoBagValue;
+        oppoRank = oppobangleValue + oppoearringValue + opponecklaceValue + oppoHairBandValue + oppoHandItemValue;
         opTotal += oppoRank;
         oppElements.oppoTotal.text = opTotal.ToString();
         yield return new WaitForSeconds(3);

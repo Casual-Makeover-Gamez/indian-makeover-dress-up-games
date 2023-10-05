@@ -618,7 +618,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1000, y: -150}
+  m_AnchoredPosition: {x: 109, y: -150}
   m_SizeDelta: {x: 497, y: 1327}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4779326
@@ -1436,8 +1436,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -2230,8 +2230,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.3, y: 496.3}
-  m_SizeDelta: {x: 153, y: 74}
+  m_AnchoredPosition: {x: -20.6, y: 492.3}
+  m_SizeDelta: {x: 142, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37178139
 MonoBehaviour:
@@ -2253,7 +2253,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c42bf9e6383bc6b4e907f4bc2bf9c9f3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e370c1dd46246bc4ab23b0145a9cf399, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3750,8 +3750,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -3759,7 +3759,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CasualMode
+          m_StringArgument: PakistaniMode
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1206261111}
@@ -5190,8 +5190,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.2, y: 564.2}
-  m_SizeDelta: {x: 129, y: 53}
+  m_AnchoredPosition: {x: -19.2, y: 568}
+  m_SizeDelta: {x: 129, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &99704867
 CanvasRenderer:
@@ -5221,7 +5221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 013315acef8d8144381630deabfbc610, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef01951ca07f9c04786f92f0936ee8d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7707,7 +7707,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6d52dfeae0fe8f549b9295488efbe4b1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9f7f3fc9ea208c14ab6ce3e00a8b6e5e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8815,8 +8815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.95, y: -56.4}
-  m_SizeDelta: {x: 585, y: 1024}
+  m_AnchoredPosition: {x: -28.96, y: -150.7}
+  m_SizeDelta: {x: 967, y: 1221}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &159585696
 CanvasRenderer:
@@ -8846,7 +8846,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 22716d31d7a48444da3dbcd44bc37c61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8206cbc0f3e59794a8fd9a596beb513d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12256,8 +12256,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -13484,8 +13484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.7, y: 169.4}
-  m_SizeDelta: {x: 59, y: 64}
+  m_AnchoredPosition: {x: 120.9, y: 172.2}
+  m_SizeDelta: {x: 69, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &263248623
 CanvasRenderer:
@@ -13515,7 +13515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4f0781e278c63db4ba58e6c989f15c37, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c562b1b887b5d924082fa5a9d45546e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15506,8 +15506,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: CheckVideoStatus
         m_Mode: 1
         m_Arguments:
@@ -17793,8 +17793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: Submit
         m_Mode: 1
         m_Arguments:
@@ -20019,8 +20019,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.8, y: -587.4}
-  m_SizeDelta: {x: 367, y: 210}
+  m_AnchoredPosition: {x: -84.13, y: -596.08}
+  m_SizeDelta: {x: 352, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &398868517
 CanvasRenderer:
@@ -20050,7 +20050,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a843acafd9d83f478a9b846f17384ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6cc2d93b5aabd7c4cb15a4b4554644b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -20404,7 +20404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &420941003
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20424,8 +20424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.5, y: 501.4}
-  m_SizeDelta: {x: 62, y: 27}
+  m_AnchoredPosition: {x: -18.6, y: 500.1}
+  m_SizeDelta: {x: 57, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &420941004
 MonoBehaviour:
@@ -20447,7 +20447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c44eedb0add8f543a835af96f319a0b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c67beb17f04287448a4643c4b3942c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21470,8 +21470,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -23091,8 +23091,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -25963,8 +25963,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -30518,8 +30518,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -30632,8 +30632,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.1, y: 624.1}
-  m_SizeDelta: {x: 167, y: 121}
+  m_AnchoredPosition: {x: -19.1, y: 641.3}
+  m_SizeDelta: {x: 160, y: 155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &593978085
 MonoBehaviour:
@@ -30655,7 +30655,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9ed727adb219aa54c8722df5c105bd80, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc4d93ca174dd024090dfa2267167d91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -30795,8 +30795,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -37289,8 +37289,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: GetRewardedCoins
         m_Mode: 1
         m_Arguments:
@@ -40800,7 +40800,7 @@ GameObject:
   - component: {fileID: 832626321}
   - component: {fileID: 832626320}
   m_Layer: 5
-  m_Name: BagScroller
+  m_Name: HandItemsScroller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41460,7 +41460,7 @@ GameObject:
   - component: {fileID: 836031879}
   - component: {fileID: 836031881}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41569,8 +41569,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -46071,7 +46071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903250126
 RectTransform:
   m_ObjectHideFlags: 0
@@ -46934,8 +46934,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.2, y: 499.9}
-  m_SizeDelta: {x: 302, y: 458}
+  m_AnchoredPosition: {x: -29.9, y: 426.329}
+  m_SizeDelta: {x: 320, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &914641349
 CanvasRenderer:
@@ -46965,7 +46965,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dee1957d4026ba34fa468ba454e7a624, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b5c1ca0f7da9d246983382d7aa92549, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -52060,8 +52060,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -55583,8 +55583,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -56528,8 +56528,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -18.3, y: 496.3}
-  m_SizeDelta: {x: 153, y: 74}
+  m_AnchoredPosition: {x: -20.6, y: 492.3}
+  m_SizeDelta: {x: 142, y: 81}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1101168794
 CanvasRenderer:
@@ -56559,7 +56559,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 975ce48ec9da85149a129405717adb48, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e370c1dd46246bc4ab23b0145a9cf399, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -59031,7 +59031,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1146589977}
-  - component: {fileID: 1146589979}
+  - component: {fileID: 1146589981}
   m_Layer: 0
   m_Name: Script
   m_TagString: Untagged
@@ -59054,7 +59054,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1146589979
+--- !u!114 &1146589981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -59063,14 +59063,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1146589974}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 037550bac43033c47a36991d0359d32c, type: 3}
+  m_Script: {fileID: 11500000, guid: 1de02277756408b4598d5b2d58de09ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   selectedItem: 0
   uIElements:
     aLLScrollers: {fileID: 1819681874}
     dressScroller: {fileID: 1670335341}
-    BagScroller: {fileID: 832626318}
+    HandItemsScroller: {fileID: 832626318}
     HairBandScroller: {fileID: 1648556249}
     hairScrolleer: {fileID: 466735493}
     BangelsScroller: {fileID: 1537947721}
@@ -59083,7 +59083,7 @@ MonoBehaviour:
     BgScroller: {fileID: 1053650241}
     BlushScroller: {fileID: 1190174392}
     dressImage: {fileID: 1943833761}
-    BagImage: {fileID: 2026479917}
+    HandItemsImage: {fileID: 2026479917}
     HairBandImage: {fileID: 593978085}
     hairImage: {fileID: 2101316824}
     BangelsImage: {fileID: 1772959579}
@@ -59102,7 +59102,7 @@ MonoBehaviour:
     oppobangelImage: {fileID: 263248624}
     oppohairImage: {fileID: 914641350}
     oppoeyeShadesImage: {fileID: 99704868}
-    oppoBagImage: {fileID: 2088810927}
+    oppoHandItemsImage: {fileID: 2088810927}
     oppoearRingImage: {fileID: 1101168795}
     oppoHairBandImage: {fileID: 1372509151}
     opponeckLaceImage: {fileID: 2005165933}
@@ -59149,143 +59149,143 @@ MonoBehaviour:
   CatagoryDefaultSprites: {fileID: 21300000, guid: e254eac36b2f3ac488913a21da9a3a4d, type: 3}
   CatagorySelectedSprites: {fileID: 21300000, guid: 44c48f10a089d5a488f196a83509e3cf, type: 3}
   dressSprites:
-  - {fileID: 21300000, guid: 59b01b86a0b03454c8fecdac7afee05b, type: 3}
-  - {fileID: 21300000, guid: f6e1dd6759958274ab6367b051394479, type: 3}
-  - {fileID: 21300000, guid: 51ed89778c1b8ef48a499375b96175fe, type: 3}
-  - {fileID: 21300000, guid: d7d5e1b60f72b9246890a6d8ebfa90bc, type: 3}
-  - {fileID: 21300000, guid: 86a6b83abed614c41bf43be8e62240a5, type: 3}
-  - {fileID: 21300000, guid: 9285b1b7ec462014fbcbe17c59250dbe, type: 3}
-  - {fileID: 21300000, guid: 1870edb7bc911fc4ebf22421c665427f, type: 3}
-  - {fileID: 21300000, guid: 7093eaddd52c8c54daf0c2d280954e3e, type: 3}
-  - {fileID: 21300000, guid: 2441035232f38234daca3c848092feee, type: 3}
-  - {fileID: 21300000, guid: 886a4db25ad02664aadc7056a928754d, type: 3}
-  BagSprites:
-  - {fileID: 21300000, guid: b6f483a0ab5846d48a11b63c8494b621, type: 3}
-  - {fileID: 21300000, guid: de8664b26849edc4db65415f2dffbcbe, type: 3}
-  - {fileID: 21300000, guid: a0fb79c3ebdd817499a572dc07430f59, type: 3}
-  - {fileID: 21300000, guid: 088dcf412ce513e48bde24f6078c10ba, type: 3}
-  - {fileID: 21300000, guid: ce68d5aa09d506f45832ad30f8a571fa, type: 3}
-  - {fileID: 21300000, guid: 274808d4e8b3ab2448809f4816bbaeda, type: 3}
-  - {fileID: 21300000, guid: c4a36960f7d064642818f819de079be0, type: 3}
-  - {fileID: 21300000, guid: 62c581e7fc679ac4486f5bff8db9cc0d, type: 3}
-  - {fileID: 21300000, guid: 51999dfdfb498584096c796cc5efa06f, type: 3}
-  - {fileID: 21300000, guid: 790a1327380428b42847a942799b1b65, type: 3}
+  - {fileID: 21300000, guid: 60440df4eba032748845dca74fb1b3ac, type: 3}
+  - {fileID: 21300000, guid: a88e0d8d6dccf5849b75e4a07186a9a4, type: 3}
+  - {fileID: 21300000, guid: 6b73ea35de4a1914cbadc16037b1e43a, type: 3}
+  - {fileID: 21300000, guid: 367c7a8d8b1ac0347881cf2988099f73, type: 3}
+  - {fileID: 21300000, guid: 3467f0eb423e1454ab9701dfaf7ea0f4, type: 3}
+  - {fileID: 21300000, guid: b3687dc875e036f42853dede5ca7b224, type: 3}
+  - {fileID: 21300000, guid: 115401584638c0e43b08e560bad53d25, type: 3}
+  - {fileID: 21300000, guid: a91422226bdd8d4498d2c764f0080f3a, type: 3}
+  - {fileID: 21300000, guid: 50fe54f8f86cfbb4da0d5d250ec3b27d, type: 3}
+  - {fileID: 21300000, guid: 2327c049e1696e340b6731cbef591972, type: 3}
+  HandItemSprites:
+  - {fileID: 21300000, guid: 1b8f263426a907040a3cb5e99b05100e, type: 3}
+  - {fileID: 21300000, guid: 564325c7a37de1c44961bfd40f40c710, type: 3}
+  - {fileID: 21300000, guid: 0877f251b9cf31c4c8111bdcc40301d8, type: 3}
+  - {fileID: 21300000, guid: 5b7fea0eb2010034798fef47a75714c4, type: 3}
+  - {fileID: 21300000, guid: 3db16fab59b11de4ea513fbac7a3f0a3, type: 3}
+  - {fileID: 21300000, guid: 42885812d4ab73f4f9910352fc6f1f4b, type: 3}
+  - {fileID: 21300000, guid: 42394e641e58d094886207dffb647b0d, type: 3}
+  - {fileID: 21300000, guid: 8f57db31260b3d74786f3f1425f81216, type: 3}
+  - {fileID: 21300000, guid: 2bc609c6206efbc4493175b8e93df294, type: 3}
+  - {fileID: 21300000, guid: bb4e7e84ae3ba6d4da9e9e86a3939389, type: 3}
   HairBandSprites:
-  - {fileID: 21300000, guid: 9ed727adb219aa54c8722df5c105bd80, type: 3}
-  - {fileID: 21300000, guid: ac9e4b282400b174d91b67cbf16b5ca1, type: 3}
-  - {fileID: 21300000, guid: 15e1e41d4f7a9d8489b145ac82599174, type: 3}
-  - {fileID: 21300000, guid: 468574612ebfa204494922ce0723c202, type: 3}
-  - {fileID: 21300000, guid: 21d3deaa4e4f1d340afcd12c28d3d59e, type: 3}
-  - {fileID: 21300000, guid: 43526b9c934bcc0468eb313ac9ed1544, type: 3}
-  - {fileID: 21300000, guid: fd658a46b3cb948479943678179a74e3, type: 3}
-  - {fileID: 21300000, guid: 40f49a4643386b240836c0b823063ab2, type: 3}
-  - {fileID: 21300000, guid: bf9c1252e4777fe48b70538cc1b0e0c1, type: 3}
-  - {fileID: 21300000, guid: d014a60c43e14724193df562daa6646d, type: 3}
+  - {fileID: 21300000, guid: 1e997cdaa6b2dd149ba34a1c8d868bd6, type: 3}
+  - {fileID: 21300000, guid: 239dab9a3bb4b334aa8d9521b89e69df, type: 3}
+  - {fileID: 21300000, guid: 1b3c6aa63b3f4a94882d046958b4bd07, type: 3}
+  - {fileID: 21300000, guid: 4da35a38a3d6a7e4d90d4868c45e63d8, type: 3}
+  - {fileID: 21300000, guid: 9767e311f5a9cb64f8e7eb64e9185a1e, type: 3}
+  - {fileID: 21300000, guid: 93c39f32bb003ce45b2fde126c317655, type: 3}
+  - {fileID: 21300000, guid: ff3992c05ce69aa44a43ccf1c4fc5e7f, type: 3}
+  - {fileID: 21300000, guid: cfdca9b47f6212946a95264c2f10fa02, type: 3}
+  - {fileID: 21300000, guid: aa8346384d4d29c44be86ad75f3bf894, type: 3}
+  - {fileID: 21300000, guid: 947035fe06b18ea479c6c7df460764fd, type: 3}
   hairSprites:
-  - {fileID: 21300000, guid: 488f0d1bcef2c7741b5967a74b645c61, type: 3}
-  - {fileID: 21300000, guid: b82b11d5009094649b8ee62462e28092, type: 3}
-  - {fileID: 21300000, guid: c4b0f710398f80940841a928d2c4910f, type: 3}
-  - {fileID: 21300000, guid: bd16fcb6f1a1c774c94e79bc61356867, type: 3}
-  - {fileID: 21300000, guid: 8dc86aa39ec7abe48a1424966d39f3b2, type: 3}
-  - {fileID: 21300000, guid: e7161d3184fadfb479ed8b202efb61d3, type: 3}
-  - {fileID: 21300000, guid: 2494d3d393fd42142b0250ae06501fc2, type: 3}
-  - {fileID: 21300000, guid: ab8e1bd470bcc244199f65bd5fe1655e, type: 3}
-  - {fileID: 21300000, guid: 31b4024caa60fea4cb1f3b52dadac60e, type: 3}
-  - {fileID: 21300000, guid: 7ee6e94667e01bd48b1428ba61a783e8, type: 3}
+  - {fileID: 21300000, guid: 1fdd1b58b3e16fb4496d936798bb611c, type: 3}
+  - {fileID: 21300000, guid: d5c29f0f07064ac49a17d1a4989ea4e1, type: 3}
+  - {fileID: 21300000, guid: 0361ffb504357444b8b371d7c4af4e05, type: 3}
+  - {fileID: 21300000, guid: 463222cb2ddc72b42a4a9ca392f67b8e, type: 3}
+  - {fileID: 21300000, guid: a22a2579a4cd169428d508c98edb6eeb, type: 3}
+  - {fileID: 21300000, guid: 73c6ef31b5c10d546b2c1fb12e9e5e2e, type: 3}
+  - {fileID: 21300000, guid: b51be2743ca8b6d45b2b7f32c14722f3, type: 3}
+  - {fileID: 21300000, guid: 307c3248cc45ab746960eb3fbaddda1e, type: 3}
+  - {fileID: 21300000, guid: c66cabe22b156fe4cbaa204fa332cc01, type: 3}
+  - {fileID: 21300000, guid: f7cbbeb99e132704c82b4810bfc744f4, type: 3}
   BangelsSprites:
-  - {fileID: 21300000, guid: d8200b010dc425c46b3ebee0caadfbe1, type: 3}
-  - {fileID: 21300000, guid: 49955e6857d77a541b0c9448d5781027, type: 3}
-  - {fileID: 21300000, guid: 401bd434a2c0f7343a597ff1b53ab916, type: 3}
-  - {fileID: 21300000, guid: 504e6816f37764147ad677149bccff80, type: 3}
-  - {fileID: 21300000, guid: 309d0fa108eb9b8429628be045602dfd, type: 3}
-  - {fileID: 21300000, guid: 71e619a4ee371bb459838875aa8affd3, type: 3}
-  - {fileID: 21300000, guid: 8b92dc1084164f4418ebf59a2bfd5343, type: 3}
-  - {fileID: 21300000, guid: 87e4c23ac9f7c3a47a2f7bf3ab9a65ba, type: 3}
-  - {fileID: 21300000, guid: 265c52346f02d0a45a4dfa703b792f95, type: 3}
-  - {fileID: 21300000, guid: 0474592af8f2e2d4199f41920f829080, type: 3}
+  - {fileID: 21300000, guid: a5d87c6f0698bb347b46d2ec08f26f32, type: 3}
+  - {fileID: 21300000, guid: 68b3bf2df6823df42b796ca4d093f2ba, type: 3}
+  - {fileID: 21300000, guid: ceef9d6151166d64ab98e681f4a56146, type: 3}
+  - {fileID: 21300000, guid: f145ec86cc9132f4dbf6e83e225f9bf5, type: 3}
+  - {fileID: 21300000, guid: 08bbe973f8e38cc4e8ce0877e5780b5d, type: 3}
+  - {fileID: 21300000, guid: 4dbaa324f7237d540820bfe8dd64b23a, type: 3}
+  - {fileID: 21300000, guid: dbade36165d7cd949b78d55c14d4cfeb, type: 3}
+  - {fileID: 21300000, guid: 2b8c99164c4180b47a6a9a208711eb57, type: 3}
+  - {fileID: 21300000, guid: d7493cd7982308b4aad2cd52495bc55d, type: 3}
+  - {fileID: 21300000, guid: 94d7a44c8af45474aa79af5d5a90d424, type: 3}
   ShoesSprites:
-  - {fileID: 21300000, guid: 55ec9e16cd43dfb4cbeaac00133a886b, type: 3}
-  - {fileID: 21300000, guid: 07f0e147e3db9bb47b14bd4e90971076, type: 3}
-  - {fileID: 21300000, guid: 4ce05bae8d1df2f41910c62294696733, type: 3}
-  - {fileID: 21300000, guid: 62c12a87ecc20084a84de29d0a572a3b, type: 3}
-  - {fileID: 21300000, guid: f5cd814ac9e464241852d3fec2bbf4a4, type: 3}
-  - {fileID: 21300000, guid: 18c6564bfe6e5074897ca35170c955e5, type: 3}
-  - {fileID: 21300000, guid: dfa508d161551c5448ea6bd6b20dfc52, type: 3}
-  - {fileID: 21300000, guid: 2fdd130d08e54da478ad0fd14776f78e, type: 3}
-  - {fileID: 21300000, guid: f55d85433adc464448a68640e23c97dd, type: 3}
-  - {fileID: 21300000, guid: d0e6aeec1287f7a4ca5aa6b0610fdefb, type: 3}
+  - {fileID: 21300000, guid: 0db7441fce849394ba035a117134fea8, type: 3}
+  - {fileID: 21300000, guid: f41581289d4e436408260ec9b631fa84, type: 3}
+  - {fileID: 21300000, guid: 09dc896d17ff10b44afb7f89a97d5ca2, type: 3}
+  - {fileID: 21300000, guid: cf45668d9e7de474fb962d5cd3287a65, type: 3}
+  - {fileID: 21300000, guid: 7cd9a78c215213b44bc00c5f72de8274, type: 3}
+  - {fileID: 21300000, guid: e476cf2079bda8f4791dfab140b85ffe, type: 3}
+  - {fileID: 21300000, guid: ce5f3890f81d7f84a8447a1a4d95f356, type: 3}
+  - {fileID: 21300000, guid: 4276f0f92f3884045902d84d416bc1a4, type: 3}
+  - {fileID: 21300000, guid: 1d9e797bcf32b9e4894e1e42383b4832, type: 3}
+  - {fileID: 21300000, guid: 495cdcdb276c67b438a6a55a5552a482, type: 3}
   earRingsSprites:
-  - {fileID: 21300000, guid: c42bf9e6383bc6b4e907f4bc2bf9c9f3, type: 3}
-  - {fileID: 21300000, guid: 4e7a59ddf5e605841a3ba416eeffd104, type: 3}
-  - {fileID: 21300000, guid: d5193da5bddf252418a1e5a13c20af42, type: 3}
-  - {fileID: 21300000, guid: c558cba1fab79af409d9c3173be4d1fa, type: 3}
-  - {fileID: 21300000, guid: 37241370f1c73ff428ebea6a980be5f9, type: 3}
-  - {fileID: 21300000, guid: c34ff2e84aff35d478befd724b2160a8, type: 3}
-  - {fileID: 21300000, guid: eb1064ffdd5f8aa42b84bf25c92971ff, type: 3}
-  - {fileID: 21300000, guid: 919b718f619d9f64c853f82ee5a41955, type: 3}
-  - {fileID: 21300000, guid: b35f4d068118c11489f868a3f4fde1c8, type: 3}
-  - {fileID: 21300000, guid: 8746f85926913454d993b3f5c73e3743, type: 3}
+  - {fileID: 21300000, guid: 4ee05403f4e31f84abc51b9b004fb289, type: 3}
+  - {fileID: 21300000, guid: eeb78023d4cad904eb77dab73d34cc0b, type: 3}
+  - {fileID: 21300000, guid: 0200fbc365b40d245a5c432caacffb8f, type: 3}
+  - {fileID: 21300000, guid: 33c79069e9b261d4cba37044cf43b898, type: 3}
+  - {fileID: 21300000, guid: 30d5d34b04cc880489579a9cd2cb5241, type: 3}
+  - {fileID: 21300000, guid: e73589b6fa4eaf345bbab8735ae4817e, type: 3}
+  - {fileID: 21300000, guid: b0abcec6ba187f94283c02c8c69aabd6, type: 3}
+  - {fileID: 21300000, guid: f3c38e65985a3f24e9e927b6ce9396ba, type: 3}
+  - {fileID: 21300000, guid: 1814081dc80f2904b8c0e7de04b81b92, type: 3}
+  - {fileID: 21300000, guid: 0d5878a3bfc3891438fbcdc8f0d6f60c, type: 3}
   EyeShadesSprites:
-  - {fileID: 21300000, guid: 592d654343ec30646b4b2f0637de28cb, type: 3}
-  - {fileID: 21300000, guid: f0b91429e93393349adaf6864ada180e, type: 3}
-  - {fileID: 21300000, guid: 1e9e75474a47e914ea1f31e849c3577c, type: 3}
-  - {fileID: 21300000, guid: ec73f519493c01840a83296fbad57a1b, type: 3}
-  - {fileID: 21300000, guid: 8aee924e89e00c24487a97f6b48ba641, type: 3}
-  - {fileID: 21300000, guid: b3075772ce9e3154b9e9300bc51dcd06, type: 3}
-  - {fileID: 21300000, guid: b2ac0af71d63efa4ba4ecc64246668bc, type: 3}
-  - {fileID: 21300000, guid: 186ac0dabda274448a9d47d2af11e1a9, type: 3}
-  - {fileID: 21300000, guid: bfbe38ac3eb5c6c449758808ef5b6aad, type: 3}
-  - {fileID: 21300000, guid: 50bbc7cf29ae35b46baf723aa65ffd03, type: 3}
+  - {fileID: 21300000, guid: 981ad829cae61aa42b3a45f1cfc56ec8, type: 3}
+  - {fileID: 21300000, guid: 91d1b134ca0bb6e42bd508d8f1ce0a49, type: 3}
+  - {fileID: 21300000, guid: fcb4f2dc22b5bab45bb8446140fe3695, type: 3}
+  - {fileID: 21300000, guid: 27ce82316b33b5442a4a2a8739225ef8, type: 3}
+  - {fileID: 21300000, guid: a4ceb09f1f72ef142ae0fde8caa0f52b, type: 3}
+  - {fileID: 21300000, guid: c9d8782f7a2f03d4795ad4a73620ea87, type: 3}
+  - {fileID: 21300000, guid: 7754a94c4486f3d4783043311b790f9e, type: 3}
+  - {fileID: 21300000, guid: 995c9df9c06aa5d4f99960e012ec8381, type: 3}
+  - {fileID: 21300000, guid: e94f686e0e1724245a95334ab7b14c64, type: 3}
+  - {fileID: 21300000, guid: 4fbb1000ba7e4b443816f1988ee95bc1, type: 3}
   lipsTickSprites:
-  - {fileID: 21300000, guid: 4c44eedb0add8f543a835af96f319a0b, type: 3}
-  - {fileID: 21300000, guid: 8de50ec4746fd054d9076ee338e953eb, type: 3}
-  - {fileID: 21300000, guid: ee8ff9c987afc8a44ab83fc93193b35d, type: 3}
-  - {fileID: 21300000, guid: 3e0cf69570d996b4785177a8e4761c67, type: 3}
-  - {fileID: 21300000, guid: 05a09b9391d58bb4bb8dc29dbf32c576, type: 3}
-  - {fileID: 21300000, guid: e8fac211a26f43242a096cfc4740351f, type: 3}
-  - {fileID: 21300000, guid: 39ef29c8ffd1e2842a1a70cfa808ced5, type: 3}
-  - {fileID: 21300000, guid: 9f024f2bd319ab448b35098b59b00711, type: 3}
-  - {fileID: 21300000, guid: 14fd64417f081fc4eb637b32072e729a, type: 3}
-  - {fileID: 21300000, guid: d2202af5a70ea65479d5d2b8bb2af88d, type: 3}
+  - {fileID: 21300000, guid: de383a687ffbf564a9159ca81e9fb933, type: 3}
+  - {fileID: 21300000, guid: b8b8f54fcd5c65248955006aa0c6f91f, type: 3}
+  - {fileID: 21300000, guid: 42b60407ef9e1124cbf40c68fb8ec01c, type: 3}
+  - {fileID: 21300000, guid: fcc7dcb0df085604fb1c2a204019bb7e, type: 3}
+  - {fileID: 21300000, guid: 3b8c5e0ea4f86a04481940ca84a73ff0, type: 3}
+  - {fileID: 21300000, guid: b16eee4539349a148bd9a488a42b3db0, type: 3}
+  - {fileID: 21300000, guid: 1a3ee3bd93b0a7f44b2366e0721fafaa, type: 3}
+  - {fileID: 21300000, guid: ec72ce41db255ca429f64771a4262e67, type: 3}
+  - {fileID: 21300000, guid: 523b9236f6e1f4d4684fc72bd4e03bf5, type: 3}
+  - {fileID: 21300000, guid: 29f433397aa32ce4c980719dbfd0de29, type: 3}
   necklaceSprites:
-  - {fileID: 21300000, guid: e4801df6d840af1479a3ff2c03e21535, type: 3}
-  - {fileID: 21300000, guid: 7a0a045d54f5f5744a0e7f1299822cde, type: 3}
-  - {fileID: 21300000, guid: b955da28ca25156479136624e60709c3, type: 3}
-  - {fileID: 21300000, guid: 730c14159599bc740bf2c46478eba949, type: 3}
-  - {fileID: 21300000, guid: 4e0ff147f75314f47bb566c50b4f162a, type: 3}
-  - {fileID: 21300000, guid: 728d0ada6a9a0594abda482595e32f8f, type: 3}
-  - {fileID: 21300000, guid: c581c5bca26ac6143b1926fd354572f1, type: 3}
-  - {fileID: 21300000, guid: d883c77568eee994199cbca612d607a7, type: 3}
-  - {fileID: 21300000, guid: 0a49418a2015ec94faa42374619410a5, type: 3}
-  - {fileID: 21300000, guid: 6e11813141bf7be4c829307d168a4807, type: 3}
+  - {fileID: 21300000, guid: a9ac890204a1e5c42800ab5f82b60609, type: 3}
+  - {fileID: 21300000, guid: f883522a845e5174c812cb270f1c5301, type: 3}
+  - {fileID: 21300000, guid: abd2a8829769cab4885b25fa1814f7cb, type: 3}
+  - {fileID: 21300000, guid: 3807aeefcef8a954989a696dff4bf287, type: 3}
+  - {fileID: 21300000, guid: de98e0b326b9e624f88bbf9834e743c2, type: 3}
+  - {fileID: 21300000, guid: 87df8bd21381c2246852992caef9dd70, type: 3}
+  - {fileID: 21300000, guid: 5eda70a62d887e74db2b1e4ff78c95b9, type: 3}
+  - {fileID: 21300000, guid: bcbb76c7f04f4834db504f579fcd0983, type: 3}
+  - {fileID: 21300000, guid: e476b0327486caa4da79456f61c0a942, type: 3}
+  - {fileID: 21300000, guid: 863555bc5ccd1f14382ae3a64a43f0f2, type: 3}
   EyeBrowSprites:
-  - {fileID: 21300000, guid: 6cf44dfac49e42d4ba681e313208ad75, type: 3}
-  - {fileID: 21300000, guid: 91cdbc8fb0140bc48976d11b290c82ec, type: 3}
-  - {fileID: 21300000, guid: cb87adb966ddcb04fa1516ff5afbc5ef, type: 3}
-  - {fileID: 21300000, guid: 7049a4f354fd75b4988d9f257d202442, type: 3}
-  - {fileID: 21300000, guid: 2f22f0609cd3e894c86a5fa24c43e058, type: 3}
-  - {fileID: 21300000, guid: 045b61a296f8b4b4daabb1cb8050295a, type: 3}
-  - {fileID: 21300000, guid: 06e8c360a64dd334596b16a71644835b, type: 3}
-  - {fileID: 21300000, guid: b1cc74da38f3c314f98a527fdf03b5f6, type: 3}
-  - {fileID: 21300000, guid: 398c8d30f88a09d43bb5c9f7117950ba, type: 3}
-  - {fileID: 21300000, guid: f7b78235078b540438a81242730b6b61, type: 3}
+  - {fileID: 21300000, guid: 05efc935bd21f21468114894b2aba83a, type: 3}
+  - {fileID: 21300000, guid: c3babc9a18b269a44a7cfe31083492be, type: 3}
+  - {fileID: 21300000, guid: 3e70f835a363db94ab2711656f20589a, type: 3}
+  - {fileID: 21300000, guid: 52fe51524b6ba614f919b342130b8c4e, type: 3}
+  - {fileID: 21300000, guid: f6dad6c990b798a4b866edd3d95cf5f5, type: 3}
+  - {fileID: 21300000, guid: 379fb70b658b8f641b172c7a4566e00c, type: 3}
+  - {fileID: 21300000, guid: 0e4c43d532c97c5489c41fccfdcd48bc, type: 3}
+  - {fileID: 21300000, guid: 63fe83532aa979b4ab50e163d47be246, type: 3}
+  - {fileID: 21300000, guid: ca39d12fbee93e2458e197b1f62fd3f8, type: 3}
+  - {fileID: 21300000, guid: 6b97d7af501ef584ab15dc0376a6323a, type: 3}
   backgroundSprites:
-  - {fileID: 21300000, guid: 6d52dfeae0fe8f549b9295488efbe4b1, type: 3}
-  - {fileID: 21300000, guid: 41018248bb61bd341a497b3f72b11223, type: 3}
-  - {fileID: 21300000, guid: bbbf1a4d8d46a8441b80493e3dfff760, type: 3}
-  - {fileID: 21300000, guid: f0ff70cc7fd783e43976ec9a963b3f3a, type: 3}
-  - {fileID: 21300000, guid: 2c4e692ebe4384f4aa66768fdd77d2e9, type: 3}
+  - {fileID: 21300000, guid: 53dc3d9844c233b488c3a72b4610b70f, type: 3}
+  - {fileID: 21300000, guid: 1f9afa55567e132418684f7d9e616c28, type: 3}
+  - {fileID: 21300000, guid: 1988417caf4eb7f4b8b5e87d5de093fe, type: 3}
+  - {fileID: 21300000, guid: ea130134721442e46b9a67e810fc1830, type: 3}
+  - {fileID: 21300000, guid: 5923290b75d8d404598ccb4ccee52677, type: 3}
   BlushSprites:
-  - {fileID: 21300000, guid: 0dbd0bc3f43b62e4b81f35b15796c588, type: 3}
-  - {fileID: 21300000, guid: 5d7b5c990829ac74780b3a3c77d2e620, type: 3}
-  - {fileID: 21300000, guid: c16f23dfc20996941b550947699f56cf, type: 3}
-  - {fileID: 21300000, guid: 07b1b0eceafc3e54b8d827eeaca47a12, type: 3}
-  - {fileID: 21300000, guid: 35d4773c78796874f88e0a0ccba1a0d5, type: 3}
-  - {fileID: 21300000, guid: 87e4a88719811bf4ea52362eb07937f9, type: 3}
-  - {fileID: 21300000, guid: b484acb19b13c8b4b89bec5135cb77a0, type: 3}
-  - {fileID: 21300000, guid: 7bf252def32b07d4fa1ef56ba1dbf126, type: 3}
-  - {fileID: 21300000, guid: d3ee224c7efc28e42a9d3f5383f78df9, type: 3}
-  - {fileID: 21300000, guid: b705a5653117884448d91df604c3ca65, type: 3}
+  - {fileID: 21300000, guid: aaf9de314564a0f43b5677180e0ce159, type: 3}
+  - {fileID: 21300000, guid: 66679f93eddc2624f90c1f24fa176814, type: 3}
+  - {fileID: 21300000, guid: dfc11156ff49f8441af374e4fd6388e0, type: 3}
+  - {fileID: 21300000, guid: 13e4f643f76423842b98a99f2110fb5c, type: 3}
+  - {fileID: 21300000, guid: f72c256a9dd9a1b4695370ab3b18e365, type: 3}
+  - {fileID: 21300000, guid: 6a52c574f7d15c943b7bc09752e5dc05, type: 3}
+  - {fileID: 21300000, guid: ee472c929ced73b4fbd20734e36ab36e, type: 3}
+  - {fileID: 21300000, guid: 2cf546bbec4873b47ac2658a3dd82d2f, type: 3}
+  - {fileID: 21300000, guid: 33c2d23961c8be64998f1bd8cb11fd68, type: 3}
+  - {fileID: 21300000, guid: f60912fac11f9b648bef79fef7d106dc, type: 3}
   CatagoryImage:
   - {fileID: 1629141188}
   - {fileID: 1078193789}
@@ -59511,8 +59511,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -78.8, y: -587.4}
-  m_SizeDelta: {x: 367, y: 210}
+  m_AnchoredPosition: {x: -84.13, y: -596.08}
+  m_SizeDelta: {x: 352, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1155623929
 MonoBehaviour:
@@ -59534,7 +59534,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 55ec9e16cd43dfb4cbeaac00133a886b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6cc2d93b5aabd7c4cb15a4b4554644b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -61895,8 +61895,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: CoinUnlock
         m_Mode: 1
         m_Arguments:
@@ -64655,8 +64655,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -69820,7 +69820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1344448820
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69841,8 +69841,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.2, y: 564.2}
-  m_SizeDelta: {x: 129, y: 53}
+  m_AnchoredPosition: {x: -19.2, y: 568}
+  m_SizeDelta: {x: 129, y: 54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1344448821
 MonoBehaviour:
@@ -69864,7 +69864,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 592d654343ec30646b4b2f0637de28cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ef01951ca07f9c04786f92f0936ee8d3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -71124,8 +71124,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.1, y: 624.1}
-  m_SizeDelta: {x: 167, y: 121}
+  m_AnchoredPosition: {x: -19.1, y: 641.3}
+  m_SizeDelta: {x: 160, y: 155}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1372509150
 CanvasRenderer:
@@ -71155,7 +71155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 859349e6b19c5794e95b9419adcc9a81, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cc4d93ca174dd024090dfa2267167d91, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -72793,8 +72793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: NeedMoreCoins
         m_Mode: 1
         m_Arguments:
@@ -74642,7 +74642,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 2070}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1438778028
 MonoBehaviour:
@@ -76346,8 +76346,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -84577,8 +84577,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -89320,7 +89320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1698611691
 RectTransform:
   m_ObjectHideFlags: 0
@@ -92204,7 +92204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1748170938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -92222,7 +92222,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155.54, y: -21.26}
+  m_AnchoredPosition: {x: -154.3701, y: -22.45}
   m_SizeDelta: {x: 14, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1748170939
@@ -92375,8 +92375,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.5, y: 501.4}
-  m_SizeDelta: {x: 62, y: 27}
+  m_AnchoredPosition: {x: -18.6, y: 500.1}
+  m_SizeDelta: {x: 57, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1751464290
 CanvasRenderer:
@@ -92406,7 +92406,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f14a8aacb9a2c5e4e8592279fe8a82e6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c67beb17f04287448a4643c4b3942c0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93062,7 +93062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1760907182
 RectTransform:
   m_ObjectHideFlags: 0
@@ -93083,8 +93083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: 576.2}
-  m_SizeDelta: {x: 125, y: 29}
+  m_AnchoredPosition: {x: -17.4, y: 585.6}
+  m_SizeDelta: {x: 122, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1760907183
 MonoBehaviour:
@@ -93106,7 +93106,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6cf44dfac49e42d4ba681e313208ad75, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47df065338293dc4eb7d97abce15206a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93540,8 +93540,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 116.7, y: 169.4}
-  m_SizeDelta: {x: 59, y: 64}
+  m_AnchoredPosition: {x: 120.9, y: 172.2}
+  m_SizeDelta: {x: 69, y: 65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1772959579
 MonoBehaviour:
@@ -93563,7 +93563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d8200b010dc425c46b3ebee0caadfbe1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c562b1b887b5d924082fa5a9d45546e0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -95151,8 +95151,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -96019,7 +96019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1819681875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -97394,8 +97394,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1146589979}
-        m_TargetAssemblyTypeName: CasualMode, Assembly-CSharp
+      - m_Target: {fileID: 1146589981}
+        m_TargetAssemblyTypeName: PakistaniMode, Assembly-CSharp
         m_MethodName: SelectedCatagory
         m_Mode: 3
         m_Arguments:
@@ -97442,8 +97442,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23, y: 576.2}
-  m_SizeDelta: {x: 125, y: 29}
+  m_AnchoredPosition: {x: -17.4, y: 585.6}
+  m_SizeDelta: {x: 122, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1859163809
 CanvasRenderer:
@@ -97473,7 +97473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9faf0032b7681574e8f2d93c057bcf7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 47df065338293dc4eb7d97abce15206a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -99584,7 +99584,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0ae3dfd05af7ace409e94f66be7e4eb2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4554abc13c05b64483979ad3eab5669, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -99620,8 +99620,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.8, y: 538.5}
-  m_SizeDelta: {x: 150, y: 141}
+  m_AnchoredPosition: {x: -22.4, y: 547}
+  m_SizeDelta: {x: 149, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1902284186
 GameObject:
@@ -100279,7 +100279,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 240}
+  m_SizeDelta: {x: 1150, y: 240}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1908652787
 MonoBehaviour:
@@ -102109,8 +102109,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.9, y: 385.3}
-  m_SizeDelta: {x: 122, y: 157}
+  m_AnchoredPosition: {x: -16, y: 354.9}
+  m_SizeDelta: {x: 125, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1934326354
 MonoBehaviour:
@@ -102132,7 +102132,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e4801df6d840af1479a3ff2c03e21535, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b38f3a743b2c36f4ab30b473cfdb168a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103023,8 +103023,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.95, y: -56.4}
-  m_SizeDelta: {x: 585, y: 1024}
+  m_AnchoredPosition: {x: -28.96, y: -132.61}
+  m_SizeDelta: {x: 947, y: 1238}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1943833761
 MonoBehaviour:
@@ -103046,7 +103046,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 59b01b86a0b03454c8fecdac7afee05b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0c064ed2674c59249bf7eddb05ab1025, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -103848,7 +103848,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957660542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -105867,8 +105867,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -17.9, y: 385.3}
-  m_SizeDelta: {x: 122, y: 157}
+  m_AnchoredPosition: {x: -16, y: 354.9}
+  m_SizeDelta: {x: 125, y: 215}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2005165932
 CanvasRenderer:
@@ -105898,7 +105898,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 02f093865a0bcae41b8996c59fa1ff77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b38f3a743b2c36f4ab30b473cfdb168a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -106481,7 +106481,7 @@ GameObject:
   - component: {fileID: 2026479918}
   - component: {fileID: 2026479917}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -106506,8 +106506,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.2, y: -191.7}
-  m_SizeDelta: {x: 325, y: 330}
+  m_AnchoredPosition: {x: -209.7, y: -73.6}
+  m_SizeDelta: {x: 247, y: 276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2026479917
 MonoBehaviour:
@@ -106529,7 +106529,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b6f483a0ab5846d48a11b63c8494b621, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cef08d7e2e8dbf246a26d79dd3bb51d5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -108940,8 +108940,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.8, y: 538.5}
-  m_SizeDelta: {x: 150, y: 141}
+  m_AnchoredPosition: {x: -22.4, y: 547}
+  m_SizeDelta: {x: 149, y: 141}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2076211704
 MonoBehaviour:
@@ -108963,7 +108963,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 0dbd0bc3f43b62e4b81f35b15796c588, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4554abc13c05b64483979ad3eab5669, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -109586,7 +109586,7 @@ GameObject:
   - component: {fileID: 2088810926}
   - component: {fileID: 2088810927}
   m_Layer: 5
-  m_Name: Bag
+  m_Name: HandItems
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109610,8 +109610,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -158.2, y: -191.7}
-  m_SizeDelta: {x: 325, y: 330}
+  m_AnchoredPosition: {x: -209.7, y: -73.6}
+  m_SizeDelta: {x: 247, y: 276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2088810926
 CanvasRenderer:
@@ -109641,7 +109641,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 97c16afdbe1f7964ea705c0a12d41263, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dbc908f28eb9dc341a3cd83f204de290, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -109981,7 +109981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2101316823
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110001,8 +110001,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -40.2, y: 499.9}
-  m_SizeDelta: {x: 302, y: 458}
+  m_AnchoredPosition: {x: -29.9, y: 426.329}
+  m_SizeDelta: {x: 320, y: 576}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101316824
 MonoBehaviour:
@@ -110024,7 +110024,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 488f0d1bcef2c7741b5967a74b645c61, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3b5c1ca0f7da9d246983382d7aa92549, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -110077,7 +110077,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -155.54, y: -21.26}
+  m_AnchoredPosition: {x: -154.3701, y: -22.45}
   m_SizeDelta: {x: 14, y: 51}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2102844909
