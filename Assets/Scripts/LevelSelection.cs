@@ -8,7 +8,7 @@ using DG.Tweening;
 public class LevelSelection : MonoBehaviour
 {
     public GameObject Scroller, LoadingPanel, videoNotAvalible;
-    public GameObject Iconpanel,selectionPanel,VsPanel;
+    public GameObject Iconpanel,selectionPanel,VsPanel,saveBtn;
     public Image fillBar,PlayericonImage,opponentIconImage;
     public Text IdTextvspanel;
     public Sprite[] Sprites;
@@ -310,8 +310,23 @@ public class LevelSelection : MonoBehaviour
         IconsBtn[index].transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
         IconsBtn[index].transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         PlayericonImage.sprite = IconsSprites[index];
-
+        saveBtn.SetActive(true);
         Rai_SaveLoad.SaveProgress();
+        #region Animation
+        StartCoroutine(ANim());
+        #endregion
+    }
+    IEnumerator ANim()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        for (int i = 1; i < characters.Length; i++)
+        {
+            characters[i].GetComponent<RectTransform>().DOAnchorPos(new Vector2(1200f, 0f), 0.7f).SetEase(Ease.Linear);
+            yield return new WaitForSeconds(0.7f);
+            yield return null;
+        }
+        characters[0].GetComponent<RectTransform>().DOAnchorPos(new Vector2(0f, 0f), 0.35f).SetEase(Ease.Linear);
     }
     IEnumerator FindOponent()
     {

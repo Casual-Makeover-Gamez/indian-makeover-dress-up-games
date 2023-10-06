@@ -159,35 +159,22 @@ public class CasualMode : MonoBehaviour
         CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
     }
 
-    IEnumerator ShowInterStitial()
-    {
-        //if (MyAdsManager.instance)
-        //{
-        //    if (MyAdsManager.instance.IsInterstitialAvailable())
-        //    {
-        //        if (uIElements.AdPenl) uIElements.AdPenl.SetActive(true);
-                yield return new WaitForSeconds(0.5f);
-        //        if (uIElements.AdPenl) uIElements.AdPenl.SetActive(false);
-        //        MyAdsManager.instance.ShowInterstitialAds();
-        //    }
-        //}
-    }
     #endregion
-    //void OnEnable()
-    //{
-    //    if (MyAdsManager.Instance != null)
-    //    {
-    //        MyAdsManager.Instance.onRewardedVideoAdCompletedEvent += OnRewardedVideoComplete;
-    //    }
-    //}
+    void OnEnable()
+    {
+        if (MyAdsManager.Instance != null)
+        {
+            MyAdsManager.Instance.onRewardedVideoAdCompletedEvent += OnRewardedVideoComplete;
+        }
+    }
 
-    //void OnDisable()
-    //{
-    //    if (MyAdsManager.Instance != null)
-    //    {
-    //        MyAdsManager.Instance.onRewardedVideoAdCompletedEvent -= OnRewardedVideoComplete;
-    //    }
-    //}
+    void OnDisable()
+    {
+        if (MyAdsManager.Instance != null)
+        {
+            MyAdsManager.Instance.onRewardedVideoAdCompletedEvent -= OnRewardedVideoComplete;
+        }
+    }
 
     #region SetInitialValues
     private void SetInitialValues()
@@ -849,13 +836,13 @@ public class CasualMode : MonoBehaviour
     #region Btnfunctions
     public void Play(string str)
     {
-        StartCoroutine(ShowInterStitial());
+        StartCoroutine(ShowInterstitialAD());
         StartCoroutine(LoadingScene(str));
     } 
 
     public void Submit()
     {
-        StartCoroutine(ShowInterStitial());
+        StartCoroutine(ShowInterstitialAD());
         topBar.SetActive(false);
         uIElements.aLLScrollers.SetActive(false);
         sheIsReady.SetActive(false);
@@ -980,23 +967,23 @@ public class CasualMode : MonoBehaviour
     #region CheckVideoStatus
     public void CheckVideoStatus()
     {
-        //if (MyAdsManager.Instance != null)
-        //{
-        //    if (MyAdsManager.Instance.IsRewardedAvailable())
-        //    {
-        //        MyAdsManager.Instance.ShowRewardedVideos();
-        //    }
-        //    else
-        //    {
+        if (MyAdsManager.Instance != null)
+        {
+            if (MyAdsManager.Instance.IsRewardedAvailable())
+            {
+                MyAdsManager.Instance.ShowRewardedVideos();
+            }
+            else
+            {
                 videoNotAvalible.SetActive(true);
                 Invoke("videoPanelOf", 1.3f);
-        //    }
-        //}
-        //else
-        //{
-        //    uIElements.videoNotAvalible.SetActive(true);
-        //    Invoke("videoPanelOf", 1.3f);
-        //}
+            }
+        }
+        else
+        {
+            videoNotAvalible.SetActive(true);
+            Invoke("videoPanelOf", 1.3f);
+        }
     }
     #endregion
 
@@ -1109,46 +1096,38 @@ public class CasualMode : MonoBehaviour
             }
         }
     }
-#endregion
+    #endregion
 
-    //public void //ShowAd()
-    //{
-    //    if (ADTime)
-    //    {
-    //        StartCoroutine(AdDelay());
-    //        ADTime = false;
-    //        StartCoroutine(ADTimeCounter());
-    //    }
-    //}
-    IEnumerator ADTimeCounter()
-    {
-        yield return new WaitForSeconds(45);
-        ADTime = true;
-    }
 
     #region ShowInterstitialAD
     private void CheckInterstitialAD()
     {
-        //if (MyAdsManager.Instance != null)
-        //{
-        //    Debug.Log("ffff");
-        //    if (MyAdsManager.Instance.IsInterstitialAvailable() && canShowInterstitial)
-        //    {
-        //        canShowInterstitial = !canShowInterstitial;
-        //        StartCoroutine(AdDelay(45));
-        //        StartCoroutine(ShowInterstitialAD());
-        //    }
-        //}
+        if (MyAdsManager.Instance != null)
+        {
+            Debug.Log("ffff");
+            if (MyAdsManager.Instance.IsInterstitialAvailable() && canShowInterstitial)
+            {
+                canShowInterstitial = !canShowInterstitial;
+                StartCoroutine(AdDelay(45));
+                StartCoroutine(ShowInterstitialAD());
+            }
+        }
     }
     IEnumerator ShowInterstitialAD()
     {
-        if (AdPenl)
+        if (MyAdsManager.Instance)
         {
-            AdPenl.SetActive(true);
-            yield return new WaitForSeconds(0.5f);
-            AdPenl.SetActive(false);
+            if (MyAdsManager.Instance.IsInterstitialAvailable())
+            {
+                if (AdPenl)
+                {
+                    AdPenl.SetActive(true);
+                    yield return new WaitForSeconds(0.5f);
+                    AdPenl.SetActive(false);
+                }
+                MyAdsManager.Instance.ShowInterstitialAds();
+            }
         }
-     //   MyAdsManager.Instance.ShowInterstitialAds();
     }
     IEnumerator AdDelay(float _Delay)
     {
@@ -1156,20 +1135,6 @@ public class CasualMode : MonoBehaviour
         canShowInterstitial = !canShowInterstitial;
     }
     #endregion
-
-    //IEnumerator AdDelay()
-    //{
-    //    if (MyAdsManager.instance)
-    //    {
-    //        if (MyAdsManager.instance.IsInterstitalLoaded())
-    //        {
-    //            uIElements.AdPenl.gameObject.SetActive(true);
-    //            yield return new WaitForSecondsRealtime(1);
-    //            uIElements.AdPenl.gameObject.SetActive(false);
-    //            ShowInterStitial();
-    //        }
-    //    }
-    //}
 
     #region DressOpponent
     private void DressUpOpponent()
