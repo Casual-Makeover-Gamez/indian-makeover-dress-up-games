@@ -15,7 +15,7 @@ public class LevelSelection : MonoBehaviour
     public Sprite[] IconsSprites;
     public Button[] IconsBtn;
     public GameObject[] characters;
-    public Button leftBtn,rightBtn;
+    public Button leftBtn,rightBtn,PlayBtn;
     private List<ItemInfo> lighterList = new List<ItemInfo>();
     private List<ItemInfo> playerIconList = new List<ItemInfo>();
     private ItemInfo tempItem;
@@ -264,23 +264,33 @@ public class LevelSelection : MonoBehaviour
     {
         if (modeSelected < characters.Length - 1)
         {
+            leftBtn.GetComponent<ScalePingPong>().enabled = true;
             leftBtn.interactable = true;
             characters[modeSelected].GetComponent<RectTransform>().DOAnchorPosX(-1250, 1f);
             characters[modeSelected + 1].GetComponent<RectTransform>().DOAnchorPosX(0, 1f);
             modeSelected++;
         }
-        if (modeSelected == characters.Length-1) rightBtn.interactable = false;
+        if (modeSelected == characters.Length - 1)
+        {
+            rightBtn.interactable = false;
+            rightBtn.GetComponent<ScalePingPong>().enabled = false;
+        }
     }
     public void Previous()
     {
         if (modeSelected > 0)
         {
+            rightBtn.GetComponent<ScalePingPong>().enabled = true;
             rightBtn.interactable = true;
             characters[modeSelected - 1].GetComponent<RectTransform>().DOAnchorPosX(0, 1f);
             characters[modeSelected].GetComponent<RectTransform>().DOAnchorPosX(1250, 1f);
             modeSelected--;
         }
-        if (modeSelected == 0) leftBtn.interactable = false;
+        if (modeSelected == 0)
+        {
+            leftBtn.interactable = false;
+            leftBtn.GetComponent<ScalePingPong>().enabled = false;
+        }
     }
 
     public void Play(string str)
@@ -298,6 +308,7 @@ public class LevelSelection : MonoBehaviour
         }
         SaveData.Instance.PlayerSelectedAvatar = index;
         IconsBtn[index].transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
+        IconsBtn[index].transform.GetChild(0).GetComponent<ParticleSystem>().Play();
         PlayericonImage.sprite = IconsSprites[index];
 
         Rai_SaveLoad.SaveProgress();
@@ -317,7 +328,11 @@ public class LevelSelection : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
         yield return new WaitForSeconds(1f);
+        PlayBtn.gameObject.SetActive(true);
         SaveData.Instance.opponentSelectedAvatar = opponentIconImage.sprite;
+    }
+    public void Play()
+    {
         StartCoroutine(loadScene(SelectesScene));
     }
 

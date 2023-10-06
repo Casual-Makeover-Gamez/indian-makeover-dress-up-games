@@ -80,6 +80,23 @@ public class PakistaniProps
     public List<bool> BGLocked = new List<bool>();
 }
 [System.Serializable]
+public class RampProps
+{
+    public List<bool> dressLocked = new List<bool>();
+    public List<bool> hairbandLocked = new List<bool>();
+    public List<bool> hairLocked = new List<bool>();
+    public List<bool> bangelsLocked = new List<bool>();
+    public List<bool> shoesLocked = new List<bool>();
+    public List<bool> earRingLocked = new List<bool>();
+    public List<bool> eyeShadesLocked = new List<bool>();
+    public List<bool> lipsTickLocked = new List<bool>();
+    public List<bool> necklaceLocked = new List<bool>();
+    public List<bool> noseRingLocked = new List<bool>();
+    public List<bool> bagLocked = new List<bool>();
+    public List<bool> BlushLocked = new List<bool>();
+    public List<bool> BGLocked = new List<bool>();
+}
+[System.Serializable]
 public class SelectionElements
 {
     public List<bool> LevelLock = new List<bool>(); 
@@ -118,6 +135,7 @@ public class SaveData
     public CasualProps casualProps = new CasualProps();
     public IndianProps indianProps = new IndianProps();
     public PakistaniProps pakistaniProps = new PakistaniProps();
+    public RampProps rampProps = new RampProps();
     public string hashOfSaveData;
 
     //Constructor to save actual GameData
@@ -125,7 +143,7 @@ public class SaveData
 
     //Constructor to check any tampering with the SaveData
     public SaveData(bool ads, int levelsUnlocked, int eventsUnlocked, int coins, bool soundOn, bool musicOn, bool vibrationOn, bool rightControls, List<PlayerProps> _players, 
-        SelectionElements _selectionElements, PartyProps _partyProps, CasualProps _casualProps, IndianProps _indianProps, PakistaniProps _PakistaniProps)
+        SelectionElements _selectionElements, PartyProps _partyProps, CasualProps _casualProps, IndianProps _indianProps, PakistaniProps _PakistaniProps, RampProps _rampProps)
     {
         RemoveAds = ads;
         LevelsUnlocked = levelsUnlocked;
@@ -141,5 +159,6 @@ public class SaveData
         casualProps = _casualProps;
         indianProps = _indianProps;
         pakistaniProps = _PakistaniProps;
+        rampProps = _rampProps;
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 using DG.Tweening;
 
 [System.Serializable]
-public class PakistaniUiElements
+public class RampUiElements
 {
     [Header("Scrollers")]
     public GameObject aLLScrollers;
@@ -20,7 +20,7 @@ public class PakistaniUiElements
     public Image videoSlotItem, coinslotItem;
 }
 [System.Serializable]
-public class PakistaniOpponent
+public class RampOpponent
 {
     [Header("Images")]
     public Image oppodressImage;
@@ -31,15 +31,15 @@ public class PakistaniOpponent
     public Text oppoTotal, videoScore, CoinScore, requirdCoins;
 }
 [System.Serializable]
-public enum PakistaniSelectedItem
+public enum RampSelectedItem
 {
      Dress, Hair, EyeShades, EyeBrow, Blush, Lipstick, HairBand, EarRings, NeckLace, Bangels, HandItems, Shoes, BackGround
 }
-public class PakistaniMode : MonoBehaviour
+public class RampMode : MonoBehaviour
 {
-    public PakistaniSelectedItem selectedItem;
-    public PakistaniUiElements uIElements;
-    public PakistaniOpponent oppElements;
+    public RampSelectedItem selectedItem;
+    public RampUiElements uIElements;
+    public RampOpponent oppElements;
     [Header("Panels")]
     public GameObject AdPenl;
     public GameObject topBar;
@@ -145,7 +145,7 @@ public class PakistaniMode : MonoBehaviour
             GameManager.Instance.Initialized = true;
             Rai_SaveLoad.LoadProgress();
         }
-        selectedItem = PakistaniSelectedItem.Dress;
+        selectedItem = RampSelectedItem.Dress;
         uIElements.dressScroller.SetActive(true);
         TotalCoins.text = SaveData.Instance.Coins.ToString();
         SetInitialValues();
@@ -452,85 +452,85 @@ public class PakistaniMode : MonoBehaviour
         DisableScrollers();
         if (CategorySFX) CategorySFX.Play();
         CatagoryImage[index].sprite = CatagorySelectedSprites;
-        if (index == (int)PakistaniSelectedItem.Dress)
+        if (index == (int)RampSelectedItem.Dress)
         {
-            selectedItem = PakistaniSelectedItem.Dress;
+            selectedItem = RampSelectedItem.Dress;
             uIElements.dressScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.Hair)
+        else if (index == (int)RampSelectedItem.Hair)
         {
-            selectedItem = PakistaniSelectedItem.Hair;
+            selectedItem = RampSelectedItem.Hair;
             uIElements.hairScrolleer.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.Bangels)
+        else if (index == (int)RampSelectedItem.Bangels)
         {
-            selectedItem = PakistaniSelectedItem.Bangels;
+            selectedItem = RampSelectedItem.Bangels;
             uIElements.BangelsScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.HairBand)
+        else if (index == (int)RampSelectedItem.HairBand)
         {
-            selectedItem = PakistaniSelectedItem.HairBand;
+            selectedItem = RampSelectedItem.HairBand;
             uIElements.HairBandScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.EarRings)
+        else if (index == (int)RampSelectedItem.EarRings)
         {
-            selectedItem = PakistaniSelectedItem.EarRings;
+            selectedItem = RampSelectedItem.EarRings;
             uIElements.earRingScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.Blush)
+        else if (index == (int)RampSelectedItem.Blush)
         {
-            selectedItem = PakistaniSelectedItem.Blush;
+            selectedItem = RampSelectedItem.Blush;
             uIElements.BlushScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.HandItems)
+        else if (index == (int)RampSelectedItem.HandItems)
         {
-            selectedItem = PakistaniSelectedItem.HandItems;
+            selectedItem = RampSelectedItem.HandItems;
             uIElements.HandItemsScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
 
         }
-        else if (index == (int)PakistaniSelectedItem.EyeShades)
+        else if (index == (int)RampSelectedItem.EyeShades)
         {
-            selectedItem = PakistaniSelectedItem.EyeShades;
+            selectedItem = RampSelectedItem.EyeShades;
             uIElements.EyeShadesScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.Lipstick)
+        else if (index == (int)RampSelectedItem.Lipstick)
         {
-            selectedItem = PakistaniSelectedItem.Lipstick;
+            selectedItem = RampSelectedItem.Lipstick;
             uIElements.lipstickScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)PakistaniSelectedItem.NeckLace)
+        else if (index == (int)RampSelectedItem.NeckLace)
         {
-            selectedItem = PakistaniSelectedItem.NeckLace;
+            selectedItem = RampSelectedItem.NeckLace;
             uIElements.necklaceScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)PakistaniSelectedItem.EyeBrow)
+        else if (index == (int)RampSelectedItem.EyeBrow)
         {
-            selectedItem = PakistaniSelectedItem.EyeBrow;
+            selectedItem = RampSelectedItem.EyeBrow;
             uIElements.EyeBrowScroller.SetActive(true);
             CharactorMover.Move(new Vector3(50, -450, -900), 0.5f, true, false);
 
         }
-        else if (index == (int)PakistaniSelectedItem.Shoes)
+        else if (index == (int)RampSelectedItem.Shoes)
         {
-            selectedItem = PakistaniSelectedItem.Shoes;
+            selectedItem = RampSelectedItem.Shoes;
             uIElements.shoeScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
         }
-        else if (index == (int)PakistaniSelectedItem.BackGround)
+        else if (index == (int)RampSelectedItem.BackGround)
         {
-            selectedItem = PakistaniSelectedItem.BackGround;
+            selectedItem = RampSelectedItem.BackGround;
             uIElements.BgScroller.SetActive(true);
             CharactorMover.Move(new Vector3(100, -150, 200), 0.5f, true, false);
 
@@ -542,55 +542,55 @@ public class PakistaniMode : MonoBehaviour
     #region GetItemsInfo
     private void GetItemsInfo()
     {
-        if (selectedItem == PakistaniSelectedItem.Dress)
+        if (selectedItem == RampSelectedItem.Dress)
         {
             SetItemsInfo(dressList, DressScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.HandItems)
+        else if (selectedItem == RampSelectedItem.HandItems)
         {
             SetItemsInfo(HandItemList, HandItemScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.HairBand)
+        else if (selectedItem == RampSelectedItem.HairBand)
         {
             SetItemsInfo(HairBandList, HairBandScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.Hair)
+        else if (selectedItem == RampSelectedItem.Hair)
         {
             SetItemsInfo(hairList, HairScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.Bangels)
+        else if (selectedItem == RampSelectedItem.Bangels)
         {
             SetItemsInfo(BangelsList, BangelsScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.Shoes)
+        else if (selectedItem == RampSelectedItem.Shoes)
         {
             SetItemsInfo(ShoesList, ShoesScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.EarRings)
+        else if (selectedItem == RampSelectedItem.EarRings)
         {
             SetItemsInfo(earRingsList, EarRingsScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeShades)
+        else if (selectedItem == RampSelectedItem.EyeShades)
         {
             SetItemsInfo(EyeShadesList, EyeShadesScore);
         }     
-        else if (selectedItem == PakistaniSelectedItem.Lipstick)
+        else if (selectedItem == RampSelectedItem.Lipstick)
         {
             SetItemsInfo(lipstickList, LipstickScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.NeckLace)
+        else if (selectedItem == RampSelectedItem.NeckLace)
         {
             SetItemsInfo(neckLaceList, NeckLaceScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.BackGround)
+        else if (selectedItem == RampSelectedItem.BackGround)
         {
             SetItemsInfo(backgroundList, BGScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
+        else if (selectedItem == RampSelectedItem.EyeBrow)
         {
             SetItemsInfo(EyeBrowList, EyeBrowScore);
         }
-        else if (selectedItem == PakistaniSelectedItem.Blush)
+        else if (selectedItem == RampSelectedItem.Blush)
         {
             SetItemsInfo(BlushList, BlushScore);
         }
@@ -652,55 +652,55 @@ public class PakistaniMode : MonoBehaviour
     #region SelectItem
     public void SelectItem(int index)
     {
-        if (selectedItem == PakistaniSelectedItem.Dress)
+        if (selectedItem == RampSelectedItem.Dress)
         {
             CheckSelectedItem(dressList, dressSprites, uIElements.dressImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.HandItems)
+        else if (selectedItem == RampSelectedItem.HandItems)
         {
             CheckSelectedItem(HandItemList, HandItemSprites, uIElements.HandItemsImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.HairBand)
+        else if (selectedItem == RampSelectedItem.HairBand)
         {
             CheckSelectedItem(HairBandList, HairBandSprites, uIElements.HairBandImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.Hair)
+        else if (selectedItem == RampSelectedItem.Hair)
         {
             CheckSelectedItem(hairList, hairSprites, uIElements.hairImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.Bangels)
+        else if (selectedItem == RampSelectedItem.Bangels)
         {
             CheckSelectedItem(BangelsList, BangelsSprites, uIElements.BangelsImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.Shoes)
+        else if (selectedItem == RampSelectedItem.Shoes)
         {
             CheckSelectedItem(ShoesList, ShoesSprites, uIElements.shoesImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.EarRings)
+        else if (selectedItem == RampSelectedItem.EarRings)
         {
             CheckSelectedItem(earRingsList, earRingsSprites, uIElements.earRingsImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeShades)
+        else if (selectedItem == RampSelectedItem.EyeShades)
         {
             CheckSelectedItem(EyeShadesList, EyeShadesSprites, uIElements.EyeShadesImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.Lipstick)
+        else if (selectedItem == RampSelectedItem.Lipstick)
         {
             CheckSelectedItem(lipstickList, lipsTickSprites, uIElements.lipstickImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.NeckLace)
+        else if (selectedItem == RampSelectedItem.NeckLace)
         {
             CheckSelectedItem(neckLaceList, necklaceSprites, uIElements.neckLaceImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
+        else if (selectedItem == RampSelectedItem.EyeBrow)
         {
             CheckSelectedItem(EyeBrowList, EyeBrowSprites, uIElements.EyeBrowImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.BackGround)
+        else if (selectedItem == RampSelectedItem.BackGround)
         {
             CheckSelectedItem(backgroundList, backgroundSprites, uIElements.BgImage);
         }
-        else if (selectedItem == PakistaniSelectedItem.Blush)
+        else if (selectedItem == RampSelectedItem.Blush)
         {
             CheckSelectedItem(BlushList, BlushSprites, uIElements.BlushImage);
         }
@@ -740,60 +740,60 @@ public class PakistaniMode : MonoBehaviour
                     {
                         if (itemImage)
                         {
-                            if (selectedItem == PakistaniSelectedItem.Dress)
+                            if (selectedItem == RampSelectedItem.Dress)
                             {
                                 IsDressTrue = true;
                                 dressValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.Hair)
+                            else if (selectedItem == RampSelectedItem.Hair)
                             {
                                 hairValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsHairTrue = true;
                             }
-                            else if (selectedItem == PakistaniSelectedItem.Bangels)
+                            else if (selectedItem == RampSelectedItem.Bangels)
                             {
                                 bangleValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsBangleTrue = true;
                             }
-                            else if (selectedItem == PakistaniSelectedItem.NeckLace)
+                            else if (selectedItem == RampSelectedItem.NeckLace)
                             {
                                 necklaceValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                                 IsNecklacetrue = true;
                             }
-                            else if (selectedItem == PakistaniSelectedItem.HairBand)
+                            else if (selectedItem == RampSelectedItem.HairBand)
                             {
                                 BlushValue = 0;
                                 HairBandValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.EarRings)
+                            else if (selectedItem == RampSelectedItem.EarRings)
                             {
                                 earringValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.HandItems)
+                            else if (selectedItem == RampSelectedItem.HandItems)
                             {
                                 HandItemValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.EyeShades)
+                            else if (selectedItem == RampSelectedItem.EyeShades)
                             {
                                 eyeshadesValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.Lipstick)
+                            else if (selectedItem == RampSelectedItem.Lipstick)
                             {
                                 lipstickValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.EyeBrow)
+                            else if (selectedItem == RampSelectedItem.EyeBrow)
                             {
                                 EyeBrowValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.Shoes)
+                            else if (selectedItem == RampSelectedItem.Shoes)
                             {
                                 shoeValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.BackGround)
+                            else if (selectedItem == RampSelectedItem.BackGround)
                             {
                                 bgValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
                             }
-                            else if (selectedItem == PakistaniSelectedItem.Blush)
+                            else if (selectedItem == RampSelectedItem.Blush)
                             {
                                 HairBandValue = 0;
                                 BlushValue = int.Parse(itemInfoList[selectedIndex].scoreText.text);
@@ -920,55 +920,55 @@ public class PakistaniMode : MonoBehaviour
     #region UnlockSingleItem
     public void UnlockSingleItem()
     {
-        if (selectedItem == PakistaniSelectedItem.Dress)
+        if (selectedItem == RampSelectedItem.Dress)
         {
             SaveData.Instance.indianProps.dressLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.HandItems)
+        else if (selectedItem == RampSelectedItem.HandItems)
         {
             SaveData.Instance.indianProps.bagLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.HairBand)
+        else if (selectedItem == RampSelectedItem.HairBand)
         {
             SaveData.Instance.indianProps.hairbandLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.Hair)
+        else if (selectedItem == RampSelectedItem.Hair)
         {
             SaveData.Instance.indianProps.hairLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.Bangels)
+        else if (selectedItem == RampSelectedItem.Bangels)
         {
             SaveData.Instance.indianProps.bangelsLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.Shoes)
+        else if (selectedItem == RampSelectedItem.Shoes)
         {
             SaveData.Instance.indianProps.shoesLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.EarRings)
+        else if (selectedItem == RampSelectedItem.EarRings)
         {
             SaveData.Instance.indianProps.earRingLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeShades)
+        else if (selectedItem == RampSelectedItem.EyeShades)
         {
             SaveData.Instance.indianProps.eyeShadesLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.Lipstick)
+        else if (selectedItem == RampSelectedItem.Lipstick)
         {
             SaveData.Instance.indianProps.lipsTickLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.NeckLace)
+        else if (selectedItem == RampSelectedItem.NeckLace)
         {
             SaveData.Instance.indianProps.necklaceLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
+        else if (selectedItem == RampSelectedItem.EyeBrow)
         {
             SaveData.Instance.indianProps.noseRingLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.BackGround)
+        else if (selectedItem == RampSelectedItem.BackGround)
         {
             SaveData.Instance.indianProps.BGLocked[selectedIndex] = false;
         }
-        else if (selectedItem == PakistaniSelectedItem.Blush)
+        else if (selectedItem == RampSelectedItem.Blush)
         {
             SaveData.Instance.indianProps.BlushLocked[selectedIndex] = false;
         }
@@ -1034,55 +1034,55 @@ public class PakistaniMode : MonoBehaviour
     #region CoinUnlocks
     public void CoinUnlock()
     {
-        if (selectedItem == PakistaniSelectedItem.Dress)
+        if (selectedItem == RampSelectedItem.Dress)
         {
             CheckCoinUnlock(dressList);
         }
-        else if (selectedItem == PakistaniSelectedItem.HandItems)
+        else if (selectedItem == RampSelectedItem.HandItems)
         {
             CheckCoinUnlock(HandItemList);
         }
-        else if (selectedItem == PakistaniSelectedItem.HairBand)
+        else if (selectedItem == RampSelectedItem.HairBand)
         {
             CheckCoinUnlock(HairBandList);
         }
-        else if (selectedItem == PakistaniSelectedItem.Hair)
+        else if (selectedItem == RampSelectedItem.Hair)
         {
             CheckCoinUnlock(hairList);
         }
-        else if (selectedItem == PakistaniSelectedItem.Bangels)
+        else if (selectedItem == RampSelectedItem.Bangels)
         {
             CheckCoinUnlock(BangelsList);
         }
-        else if (selectedItem == PakistaniSelectedItem.Shoes)
+        else if (selectedItem == RampSelectedItem.Shoes)
         {
             CheckCoinUnlock(ShoesList);
         }
-        else if (selectedItem == PakistaniSelectedItem.EarRings)
+        else if (selectedItem == RampSelectedItem.EarRings)
         {
             CheckCoinUnlock(earRingsList);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeShades)
+        else if (selectedItem == RampSelectedItem.EyeShades)
         {
             CheckCoinUnlock(EyeShadesList);
         }
-        else if (selectedItem == PakistaniSelectedItem.Lipstick)
+        else if (selectedItem == RampSelectedItem.Lipstick)
         {
             CheckCoinUnlock(lipstickList);
         }
-        else if (selectedItem == PakistaniSelectedItem.NeckLace)
+        else if (selectedItem == RampSelectedItem.NeckLace)
         {
             CheckCoinUnlock(neckLaceList);
         }
-        else if (selectedItem == PakistaniSelectedItem.EyeBrow)
+        else if (selectedItem == RampSelectedItem.EyeBrow)
         {
             CheckCoinUnlock(EyeBrowList);
         }
-        else if (selectedItem == PakistaniSelectedItem.BackGround)
+        else if (selectedItem == RampSelectedItem.BackGround)
         {
             CheckCoinUnlock(backgroundList);
         }
-        else if (selectedItem == PakistaniSelectedItem.Blush)
+        else if (selectedItem == RampSelectedItem.Blush)
         {
             CheckCoinUnlock(BlushList);
         }

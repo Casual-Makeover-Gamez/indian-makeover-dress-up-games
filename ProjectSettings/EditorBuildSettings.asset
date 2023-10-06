@@ -18,6 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Selection.unity
     guid: d0d87613ec4018947911802a6ce73b20
   - enabled: 1
+    path: Assets/Scenes/CasualMode.unity
+    guid: d0346100b1fe6c9449d90b171bac07db
+  - enabled: 1
+    path: Assets/Scenes/IndianMode.unity
+    guid: a024e36ce4e4f15489ce044a91e4efcf
+  - enabled: 1
+    path: Assets/Scenes/PakistaniMode.unity
+    guid: 2baca8e64da42764cacc633558740cf9
+  - enabled: 1
     path: Assets/Scenes/PartyMode.unity
     guid: 5012adf3e59ec6b4d9deb99801ae9a36
+  - enabled: 1
+    path: Assets/Scenes/RampMode.unity
+    guid: 908da5066c7a0074d9b922bfe616f738
   m_configObjects: {}
