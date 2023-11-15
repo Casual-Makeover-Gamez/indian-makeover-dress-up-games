@@ -11,6 +11,10 @@ public class MyMainMenu : MonoBehaviour
 
 
     // Start is called before the first frame update
+    private void Start()
+    {
+        if (GAManager.Instance) GAManager.Instance.LogDesignEvent("Scene:" + SceneManager.GetActiveScene().name + SceneManager.GetActiveScene().buildIndex);
+    }
     public void Play(string str)
     {
         loadindPanel.SetActive(true);

@@ -44,6 +44,7 @@ public class LevelSelection : MonoBehaviour
     //}
     private void Start()
     {
+        if (GAManager.Instance) GAManager.Instance.LogDesignEvent("Scene:" + SceneManager.GetActiveScene().name + SceneManager.GetActiveScene().buildIndex);
         if (GameManager.Instance.Initialized == false)
         {
             GameManager.Instance.Initialized = true;
@@ -276,6 +277,7 @@ public class LevelSelection : MonoBehaviour
             rightBtn.GetComponent<ScalePingPong>().enabled = false;
         }
     }
+
     public void Previous()
     {
         if (modeSelected > 0)
@@ -300,6 +302,7 @@ public class LevelSelection : MonoBehaviour
         VsPanel.SetActive(true);
         StartCoroutine(FindOponent());
     }
+
     public void PlayerIconsSelection(int index)
     {
         for (int i = 0; i < IconsBtn.Length; i++)
@@ -316,6 +319,7 @@ public class LevelSelection : MonoBehaviour
         StartCoroutine(ANim());
         #endregion
     }
+
     IEnumerator ANim()
     {
         yield return new WaitForSeconds(0.1f);
@@ -328,6 +332,7 @@ public class LevelSelection : MonoBehaviour
         }
         characters[0].GetComponent<RectTransform>().DOAnchorPos(new Vector2(0f, 0f), 0.35f).SetEase(Ease.Linear);
     }
+
     IEnumerator FindOponent()
     {
         yield return new WaitForSeconds(1f);
@@ -346,6 +351,7 @@ public class LevelSelection : MonoBehaviour
         PlayBtn.gameObject.SetActive(true);
         SaveData.Instance.opponentSelectedAvatar = opponentIconImage.sprite;
     }
+
     public void Play()
     {
         StartCoroutine(loadScene(SelectesScene));

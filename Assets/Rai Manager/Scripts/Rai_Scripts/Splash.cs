@@ -19,6 +19,7 @@ public class Splash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (GAManager.Instance) GAManager.Instance.LogDesignEvent("Scene:" + SceneManager.GetActiveScene().name + SceneManager.GetActiveScene().buildIndex);
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         StartCoroutine(loadScene(SceneName.ToString()));
     }

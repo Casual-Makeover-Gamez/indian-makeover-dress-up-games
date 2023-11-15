@@ -142,7 +142,7 @@ public class PartyLook : MonoBehaviour
     #region start
     private void Start()
     {
-        //if (GAManager.Instance) GAManager.Instance.LogDesignEvent("Scene:" + SceneManager.GetActiveScene().name + SceneManager.GetActiveScene().buildIndex);
+        if (GAManager.Instance) GAManager.Instance.LogDesignEvent("Scene:" + SceneManager.GetActiveScene().name + SceneManager.GetActiveScene().buildIndex);
         if (GameManager.Instance.Initialized == false)
         {
             GameManager.Instance.Initialized = true;
