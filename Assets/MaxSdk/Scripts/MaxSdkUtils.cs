@@ -349,6 +349,46 @@ public class MaxSdkUtils
 #endif
     }
 
+#if UNITY_IOS
+    [DllImport("__Internal")]
+    private static extern int _MaxGetAdditionalConsentStatus(int atpIdentifier);
+#endif
+
+    /// <summary>
+    /// Parses the Google UMP's Additional Consent (AC) string to determine the consent status for the advertising entity represented by the provided Ad Technology Provider (ATP) ID.
+    /// </summary>
+    /// <param name="atpId">The ID representing the advertising entity (e.g. 89 for Meta Audience Network).</param>
+    /// <returns>
+    /// The consent status of the advertising entity. Returns <c>true</c> if the entity has consent, <c>false</c> if not, or <c>null</c> if no AC string is available on disk.
+    /// </returns>
+    /// <see href="https://support.google.com/admanager/answer/9681920">Google’s Additional Consent Mode technical specification</see>
+    /// <see href="https://storage.googleapis.com/tcfac/additional-consent-providers.csv">List of Google ATPs and their IDs</see>
+    public static bool? GetAdditionalConsentStatus(int atpId)
+    {
+        int additionalConsentStatus = GetPlatformSpecificConsentStatus(atpId);
+        if (additionalConsentStatus == -1)
+        {
+            return null;
+        }
+        else
+        {
+            return additionalConsentStatus == 1;
+        }
+    }
+
+    private static int GetPlatformSpecificConsentStatus(int atpId)
+    {
+#if UNITY_EDITOR
+        return -1;
+#elif UNITY_IOS
+        return _MaxGetAdditionalConsentStatus(atpId);
+#elif UNITY_ANDROID
+        return MaxUnityPluginClass.CallStatic<int>("getAdditionalConsentStatus", atpId);
+#else
+        return -1;
+#endif
+    }
+
     /// <summary>
     /// Compares AppLovin MAX Unity mediation adapter plugin versions. Returns <see cref="VersionComparisonResult.Lesser"/>, <see cref="VersionComparisonResult.Equal"/>,
     /// or <see cref="VersionComparisonResult.Greater"/> as the first version is less than, equal to, or greater than the second.

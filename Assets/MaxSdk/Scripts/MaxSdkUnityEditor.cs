@@ -32,11 +32,6 @@ public class MaxSdkUnityEditor : MaxSdkBase
     private static readonly HashSet<string> ReadyAdUnits = new HashSet<string>();
     private static readonly Dictionary<string, GameObject> StubBanners = new Dictionary<string, GameObject>();
 
-    public static MaxVariableServiceUnityEditor VariableService
-    {
-        get { return MaxVariableServiceUnityEditor.Instance; }
-    }
-
     public static MaxUserServiceUnityEditor UserService
     {
         get { return MaxUserServiceUnityEditor.Instance; }
@@ -313,6 +308,12 @@ public class MaxSdkUnityEditor : MaxSdkBase
         {
             CreateStubBanner(adUnitIdentifier, bannerPosition);
         }
+
+        ExecuteWithDelay(1f, () =>
+        {
+            var eventProps = Json.Serialize(CreateBaseEventPropsDictionary("OnBannerAdLoadedEvent", adUnitIdentifier));
+            MaxSdkCallbacks.Instance.ForwardEvent(eventProps);
+        });
     }
 
     /// <summary>
@@ -558,6 +559,12 @@ public class MaxSdkUnityEditor : MaxSdkBase
     {
         ValidateAdUnitIdentifier(adUnitIdentifier, "create MREC");
         RequestAdUnit(adUnitIdentifier);
+
+        ExecuteWithDelay(1f, () =>
+        {
+            var eventProps = Json.Serialize(CreateBaseEventPropsDictionary("OnMRecAdLoadedEvent", adUnitIdentifier));
+            MaxSdkCallbacks.Instance.ForwardEvent(eventProps);
+        });
     }
 
     /// <summary>

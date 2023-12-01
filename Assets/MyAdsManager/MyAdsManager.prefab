@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 393052d8b8d320a4591f31d6fc666ce7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  adsType: 0
+  adsType: 1
   AdmobBannerPosition: 0
   AdmobAppId: ca-app-pub-7688825064780594~9112781721
   AdmobBannerId: ca-app-pub-7688825064780594/9906988645
