@@ -9,7 +9,7 @@ public class Links : MonoBehaviour
 
     public void MoreGames()
     {
-        Application.OpenURL("https://play.google.com/store/apps/dev?id=8684617111273776670");
+        Application.OpenURL("https://play.google.com/store/apps/developer?id=Casual+Makeover+Gamez");
     }
     public void RateUS()
     {
